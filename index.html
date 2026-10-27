@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>進路コンパス Ver.4 | 総合型選抜支援デモ</title>
+<title>進路コンパス Ver.5 | 校内総合型選抜支援デモ</title>
 <meta name="theme-color" content="#12213a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="進路コンパス"><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="志望理由書・活動報告書のチェック、研究活動の提案、大学の情報収集、先生マッチングをまとめた学校向け試作ツール">
 <style>
 :root{--bg:#f6f8fc;--ink:#15233b;--muted:#64748b;--line:#e1e7f0;--primary:#2867dc;--primary2:#1d4fb8;--soft:#eaf1ff;--white:#fff;--radius:16px;--shadow:0 10px 32px #142d5010}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.58}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9bc0ff;outline-offset:2px}a{color:var(--primary)}.layout{min-height:100vh;display:grid;grid-template-columns:248px 1fr}.sidebar{background:#12213a;color:#e8eef9;padding:28px 18px;display:flex;flex-direction:column;gap:22px}.brand{padding:0 12px}.brand .mark{background:#65a0ff;color:#092347;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;font-weight:800;font-size:22px;margin-bottom:10px}.brand b{display:block;font-size:20px;letter-spacing:.05em}.brand small{display:block;color:#adbdd7;margin-top:3px}.menu{display:grid;gap:5px}.navbtn{color:#b9c8de;border:0;border-radius:11px;background:transparent;text-align:left;padding:11px 13px;font-size:14px}.navbtn:hover,.navbtn.active{background:#263956;color:white}.navbtn .ico{display:inline-block;width:27px}.side-note{margin-top:auto;background:#233451;border:1px solid #384b68;padding:14px;border-radius:13px;font-size:12px;color:#ccdaef}.main{padding:32px clamp(16px,4vw,52px) 70px;max-width:1320px;width:100%;margin:auto}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--primary);text-transform:uppercase}.heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:5px 0 22px}.heading h1{font-size:clamp(23px,2.8vw,32px);letter-spacing:-.02em;margin:0}.heading p{color:var(--muted);margin:7px 0 0;font-size:14px}.pill{display:inline-flex;align-items:center;background:#edf2fa;color:#52647f;padding:5px 10px;font-size:11px;font-weight:700;border-radius:100px;white-space:nowrap}.pill.blue{background:#e6f0ff;color:#2860c2}.alert{background:#fffae9;border:1px solid #f1dda1;color:#66521f;border-radius:13px;padding:12px 15px;font-size:12px;margin-bottom:20px}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:21px}.section-title{font-size:17px;margin:0 0 13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.stack{display:grid;gap:17px}.search-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:16px}.field{display:grid;gap:6px;font-size:13px;font-weight:650}.field label{font-weight:650}.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #cdd7e5;border-radius:10px;padding:11px 12px;outline:none;color:var(--ink);font-size:14px}.field textarea{min-height:120px;resize:vertical}.hint{font-size:11px;font-weight:400;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}.chip{border:1px solid #d5dfea;background:#f7f9fe;padding:6px 10px;border-radius:100px;font-size:12px;color:#536780}.button{border:none;background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;white-space:nowrap}.button:hover{background:var(--primary2)}.button.secondary{background:#ebf2ff;color:#255ab8}.button.ghost{background:#f2f5f9;color:#344762}.button:disabled{opacity:.5;cursor:not-allowed}.teacher-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.teacher{padding:19px;display:flex;flex-direction:column;gap:12px}.teacher .avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:#edf3ff;color:#215acc;font-weight:800}.teacher h3{margin:0;font-size:17px}.teacher .meta{font-size:12px;color:var(--muted)}.teacher .desc{font-size:13px;color:#40516a;margin:0;min-height:42px}.teacher .why{background:#f3f7fd;border-left:3px solid #83acf3;color:#465a7a;font-size:12px;padding:9px 10px;border-radius:0 7px 7px 0}.teacher .last{margin-top:auto}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.num{font-size:12px;color:var(--muted)}.result-list{padding-left:20px;margin:8px 0 0;color:#3b4c63;font-size:14px}.result-list li{margin:8px 0}.well{background:#f4f7fc;border-radius:11px;padding:16px;font-size:13px}.notice{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{background:#f1f5fb;color:#526781;border:0;border-radius:9px;padding:8px 12px;font-size:12px}.tab.selected{background:#dceafa;color:#1b56b5;font-weight:700}.hidden{display:none!important}.empty{text-align:center;padding:46px 10px;color:var(--muted);font-size:13px}.report{background:#f6f9ff;border:1px solid #dfebfc;border-radius:12px;padding:16px;font-size:13px}.report b{font-size:14px}.report p{margin:7px 0}.request{background:#f7f9fc;border:1px solid #e0e7f0;border-radius:12px;padding:14px;font-size:13px}.request p{margin:4px 0;color:#64748b}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#eef4fe;border-radius:9px;padding:10px 12px;font-size:13px;color:#315b94}.stat strong{font-size:19px;margin-right:3px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fff}.feature strong{display:block;margin-bottom:7px}.feature p{font-size:12px;color:var(--muted);margin:0}.modal-bg{position:fixed;inset:0;background:#10233d9e;display:flex;align-items:center;justify-content:center;padding:16px;z-index:5}.modal{background:#fff;width:min(540px,100%);max-height:90vh;overflow:auto;border-radius:17px;padding:24px;box-shadow:0 30px 90px #0c1c3970}.modal h2{margin:0;font-size:21px}.modal .sub{font-size:12px;color:var(--muted);margin:4px 0 18px}.modal form{display:grid;gap:13px}.footer{margin:30px 0 0;font-size:12px;color:#8a96aa;text-align:center}@media(max-width:980px){.layout{display:block}.sidebar{padding:14px 18px 12px;gap:10px}.brand{display:flex;align-items:center;gap:11px}.brand .mark{margin:0;width:33px;height:33px;font-size:17px}.brand b{font-size:16px}.brand small{font-size:11px}.menu{display:flex;gap:6px;overflow-x:auto;padding-bottom:3px}.navbtn{white-space:nowrap;padding:9px 11px}.side-note{display:none}.main{padding:22px 16px 45px}}@media(max-width:700px){.search-grid,.teacher-grid,.split,.three{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.teacher .desc{min-height:0}.card{padding:17px}.teacher{padding:17px}}
@@ -22,10 +22,38 @@
 .role-btn{border:1px solid #d6e1f0;border-radius:10px;padding:7px 12px;background:#f7f9fd;color:#344b69;font-weight:700}.role-btn.chosen{background:#244e94;color:#fff;border-color:#244e94}
 .save-label{margin-left:auto;color:#6c7d95;font-size:11px}.compact-card{padding:12px;border:1px solid var(--line);border-radius:11px;background:#f9fbff}.compact-card p{margin:5px 0;font-size:12px;color:var(--muted)}.compact-card strong{font-size:13px}.checkline{display:flex;align-items:center;gap:9px;font-size:13px}.checkline input{width:18px;height:18px;accent-color:#2867dc}.miniactions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.miniactions button{font-size:11px;padding:7px 11px}.goodlabel{color:#236b50;font-size:12px;font-weight:700}.warnlabel{color:#895f1f;font-size:12px;font-weight:700}.comparison{white-space:pre-wrap;overflow-wrap:anywhere;max-height:310px;overflow-y:auto;font-size:12px}.comparison mark{background:#ffebc2;color:#564013;padding:2px;border-radius:3px}
 @media(max-width:620px){.role-switch{gap:6px}.save-label{width:100%;margin-left:0}}
+
+/* Ver.5: ログイン画面とモバイルナビゲーション */
+.layout.app-locked{display:none!important}.login-screen{min-height:100vh;background:radial-gradient(circle at top right,#c9dfff 0,#eaf1fb 38%,#f6f8fc 80%);display:grid;place-items:center;padding:28px 14px}.login-screen.hidden{display:none!important}.login-panel{width:min(520px,100%);border:1px solid #dce6f5;background:white;border-radius:23px;padding:clamp(22px,5vw,36px);box-shadow:0 26px 75px #1e3f6c20}.login-brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}.login-brand strong{display:block;font-size:20px}.login-brand span:not(.login-mark){display:block;color:#64748b;font-size:12px}.login-mark{width:48px;height:48px;border-radius:15px;background:#244d91;color:white;display:grid;place-items:center;font-size:23px;font-weight:800}.login-tag{display:inline-block;background:#ecf2ff;color:#2c5aa1;font-size:11px;font-weight:700;padding:5px 10px;border-radius:20px}.login-panel h1{font-size:27px;margin:12px 0 4px}.login-intro{color:#596d8b;font-size:13px;margin:0 0 15px}.login-warning{background:#fff7e6;border:1px solid #f3d69c;border-radius:12px;font-size:12px;padding:12px;line-height:1.7;color:#66521f}.login-form{display:grid;gap:8px;margin-top:19px}.login-form label{font-size:13px;font-weight:700}.login-form input{width:100%;min-height:44px;border:1px solid #cbd6e6;border-radius:11px;padding:10px 12px;font-size:16px;background:white}.password-row{display:flex;gap:8px}.password-row input{flex:1;min-width:0}.password-row button,.credential-row button{border:1px solid #d5dfeb;background:#eef4ff;border-radius:10px;padding:0 13px;color:#234f94;font-weight:700;font-size:12px}.login-error{color:#af2e2e;font-size:12px;margin:0;min-height:12px}.login-submit{font-size:15px;padding:13px}.demo-credentials{margin-top:24px;border-top:1px solid #e5eaf3;padding-top:17px}.demo-credentials h2{font-size:15px;margin:0 0 2px}.demo-credentials>p,.login-footnote{font-size:12px;color:#64748b;line-height:1.7}.credential-row{padding:10px 0;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #edf1f7}.credential-row>div{display:grid;gap:2px}.credential-row b{font-size:12px}.credential-row code{font-size:13px;color:#273c58}.credential-row small{font-size:12px;color:#64748b}.credential-row button{padding:9px 11px}.login-footnote{margin:15px 0 0}.session-status{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:-5px 0 18px;font-size:12px;color:#516886}.session-status #loginIndicator{background:#e7effc;color:#255393;font-weight:700;border-radius:20px;padding:6px 10px}.session-sidebar{padding:10px 12px;border-top:1px solid #32415c;display:grid;gap:8px;color:#d8e4f6;font-size:12px}.sidebar-logout{color:white;background:#2a4166;border:1px solid #465877;border-radius:10px;padding:9px}.mobile-topbar,.app-bottom-nav{display:none}.nav-shade.hidden{display:none!important}.navbtn[hidden],[data-go][hidden]{display:none!important}
+@media(max-width:980px){
+.layout{display:block}.mobile-topbar{display:flex;align-items:center;gap:11px;height:58px;position:sticky;top:0;left:0;right:0;z-index:20;background:#12213a;color:white;padding:7px 15px;box-shadow:0 4px 20px #10213f25}.hamburger{width:40px;height:40px;background:#263e60;border:1px solid #50617b;color:white;font-size:24px;border-radius:10px;line-height:1}.mobile-heading{display:flex;flex-direction:column;flex:1;min-width:0}.mobile-heading b{font-size:15px}.mobile-heading small{color:#bdcce4;font-size:10px}.topbar-logout{border:1px solid #53627c;border-radius:9px;background:#253a57;color:white;padding:8px 10px;font-size:11px}.sidebar{position:fixed;top:0;left:0;bottom:0;width:min(310px,86vw);max-height:100dvh;overflow-y:auto;z-index:40;transform:translateX(-105%);transition:transform .2s ease;box-shadow:16px 0 40px #0b1b3850;padding:20px 16px}.sidebar.is-open{transform:translateX(0)}.menu{display:grid;overflow:visible;gap:5px}.navbtn{white-space:normal;font-size:14px}.side-note{display:block}.nav-shade{position:fixed;inset:0;background:#07182e9c;z-index:30}.main{padding:20px 14px 104px}.app-bottom-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:19;background:#fff;border-top:1px solid #dde4ef;padding:5px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));box-shadow:0 -8px 22px #1b35500c}.app-bottom-nav.hidden{display:none}.app-bottom-nav button{flex:1;display:grid;justify-items:center;gap:1px;border:0;background:transparent;color:#244b89;padding:5px 9px;border-radius:9px;min-height:45px}.app-bottom-nav button span{font-size:25px;line-height:1}.app-bottom-nav button small{font-size:11px}.app-bottom-nav button:disabled{color:#b1bccb;opacity:.65}.app-bottom-nav button:active:not(:disabled){background:#e9f1ff}
+}
 </style>
 </head>
 <body>
-<div class="layout">
+
+<div id="loginScreen" class="login-screen">
+  <div class="login-panel">
+    <div class="login-brand"><span class="login-mark">進</span><div><strong>進路コンパス</strong><span>総合型選抜サポート・Ver.5</span></div></div>
+    <span class="login-tag">校内向けアカウント設計デモ</span>
+    <h1>ログイン</h1>
+    <p class="login-intro">生徒・先生・管理者の画面を、アカウントごとに確認できます。</p>
+    <div class="login-warning"><strong>ご注意：</strong>これは見た目と操作のデモです。下のIDとパスワードは全員が確認でき、本物の本人確認やアクセス制御ではありません。デモの保存情報は同じ端末内で共用されるため、氏名・実際の志望理由書などは入力しないでください。</div>
+    <form id="demoLoginForm" class="login-form" autocomplete="off">
+      <label for="demoLoginId">デモID</label><input id="demoLoginId" type="text" placeholder="例：student-demo" autocapitalize="none" spellcheck="false" required autocomplete="off">
+      <label for="demoLoginPassword">デモパスワード</label><div class="password-row"><input id="demoLoginPassword" type="password" placeholder="パスワードを入力" required autocomplete="off"><button id="togglePassword" type="button" aria-label="パスワードを表示">表示</button></div>
+      <p id="loginError" class="login-error" role="alert" aria-live="polite"></p>
+      <button class="button login-submit" type="submit">ログインする</button>
+    </form>
+    <div class="demo-credentials"><h2>試用アカウント</h2><p>下の「入力する」を押すと、該当するデモIDが入力されます。役割はIDに固定されています。</p>
+      <div class="credential-row"><div><b>生徒</b><code>student-demo</code><small>パスワード：student123</small></div><button type="button" data-fill-login="student">入力する</button></div>
+      <div class="credential-row"><div><b>先生</b><code>teacher-demo</code><small>パスワード：teacher123</small></div><button type="button" data-fill-login="teacher">入力する</button></div>
+      <div class="credential-row"><div><b>管理者</b><code>admin-demo</code><small>パスワード：admin123</small></div><button type="button" data-fill-login="admin">入力する</button></div>
+    </div>
+    <p class="login-footnote">実運用では学校のMicrosoftアカウントなどで本人確認し、サーバー側で役割を管理する予定です。登録コードだけで管理者になれる仕組みにはしません。</p>
+  </div>
+</div>
+<div class="layout app-locked" id="appShell">
 <aside class="sidebar"><div class="brand"><span class="mark">進</span><div><b>進路コンパス</b><small>校内総合型選抜支援ツール（非公式デモ）</small></div></div>
 <nav class="menu" aria-label="機能一覧">
 <button class="navbtn active" data-page="home"><span class="ico">⌂</span>ホーム</button>
@@ -43,15 +71,17 @@
 <button class="navbtn" data-page="updates"><span class="ico">↻</span>大学情報の更新</button>
 <button class="navbtn" data-page="feedback"><span class="ico">✉</span>ご意見・改善</button>
 <button class="navbtn" data-page="school"><span class="ico">⚙</span>学校向けの設定</button>
-</nav><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。外部送信・AI API接続・校内認証は未実装です。</div>
+</nav><div class="session-sidebar"><span id="sidebarRoleLabel">デモアカウント</span><button class="sidebar-logout" id="logoutDesktop" type="button">ログアウト</button></div><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。外部送信・AI API接続・校内認証は未実装です。</div>
 </aside>
+<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.5 デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
+<div class="nav-shade hidden" id="navShade"></div>
 <main class="main">
 <div class="eyebrow">Student admissions support</div>
-<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 4.0 / 非公式デモ</span></div>
-<div class="role-switch" aria-label="デモの画面切り替え"><span>操作する役割：</span><button class="role-btn chosen" data-role="student">生徒</button><button class="role-btn" data-role="teacher">先生</button><button class="role-btn" data-role="admin">管理者</button><span class="save-label" id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>試作品について：</strong>教師名・専門分野は架空の例です。今回の推薦・文章チェックはルールに基づく試作機能で、生成AIではありません。役割切替は画面のデモであり、本人確認ではありません。AI API接続・Teams送信・本人認証・本物のプッシュ通知は未実装です。外部HTMLビューアーや公開デモでは個人情報・本物の出願書類を入力しないでください。</div>
+<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 5.0 / 非公式デモ</span></div>
+<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.5操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
 <section id="page-home" class="stack">
-<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>学校のことを知っている人が作る、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.4を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
-<div class="card"><div class="row wrapsmall"><div><div class="schoollabel">カスタマイズ対象</div><h2 id="homeSchoolName" style="font-size:19px;margin:0">学校名は未設定です</h2><p class="notice" id="homeGuidance">「学校向けの設定」から校内の進路相談窓口などを登録できます。</p></div><button class="button secondary" data-go="school">学校向けの設定</button></div></div>
+<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.5を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
+<div class="card" data-admin-only><div class="row wrapsmall"><div><div class="schoollabel">カスタマイズ対象</div><h2 id="homeSchoolName" style="font-size:19px;margin:0">学校名は未設定です</h2><p class="notice" id="homeGuidance">「学校向けの設定」から校内の進路相談窓口などを登録できます。</p></div><button class="button secondary" data-go="school">学校向けの設定</button></div></div>
 <div><h2 class="section-title">できること</h2><div class="feature-grid">
 <button class="feature-action" data-go="documents"><span class="ficon">▤</span><strong>書類チェック</strong><p>志望理由書・活動報告書・自己推薦書・自己PR文の構成と表現を分析します。</p><span class="microtag">AI未接続・ルールチェック</span></button>
 <button class="feature-action" data-go="research"><span class="ficon">⌕</span><strong>大学・教授・授業の調査</strong><p>大学の募集要項、教員、シラバスを探すための検索リンクをまとめます。</p><span class="microtag">公式情報の確認が必要</span></button>
@@ -109,17 +139,22 @@
  <div class="card"><h2 class="section-title">準備の進み具合</h2><div id="profileOverview" class="well"></div><div class="field" style="margin-top:17px"><label for="taskInput">準備タスクを追加</label><input id="taskInput" maxlength="120" placeholder="例：活動報告書の構成を考える"></div><button class="button secondary" id="addTask" style="margin-top:9px">タスクを追加</button><div id="taskList" class="stack" style="margin-top:15px"></div></div></div>
 </section>
 <section id="page-history" class="stack hidden"><div class="card"><h2 class="section-title">書類の版比較</h2><p class="notice">「書類チェック」から「デモ版を履歴に保存」を押すと、文章を比較できます。サンプル文章だけを使用してください。保存はこの端末だけです。</p><div id="historyList" class="stack"></div><div id="historyCompare" class="split" style="margin-top:16px"></div></div></section>
-<section id="page-teacherportal" class="stack hidden"><div class="card"><h2 class="section-title">先生のアカウント画面（切り替えデモ）</h2><p class="notice">先生本人としての認証はありません。今は架空の先生を選んで機能を試すだけです。本人登録と管理者承認は本番導入後の仕様です。</p><div class="field"><label for="teacherPicker">操作する架空の先生</label><select id="teacherPicker"></select></div></div>
+<section id="page-teacherportal" class="stack hidden"><div class="card"><h2 class="section-title">先生のマイページ（ログインデモ）</h2><p class="notice">先生用IDに紐づく架空の先生を表示します。本人確認はまだ実装されていません。</p><div class="field"><label for="teacherPicker">ログイン中の先生（デモ）</label><select id="teacherPicker"></select></div></div>
 <div class="split"><div class="card"><h2 class="section-title">プロフィール・受付設定</h2><form id="teacherEditForm" class="stack"><div class="field"><label for="tName">表示名（仮名）</label><input id="tName" maxlength="45" required></div><div class="field"><label for="tSubject">担当教科</label><input id="tSubject" maxlength="80" required></div><div class="field"><label for="tKeywords">対応可能な分野・テーマ（読点区切り）</label><textarea id="tKeywords" maxlength="350" required></textarea></div><div class="search-grid"><div class="field"><label for="tStatus">受付状況</label><select id="tStatus"><option value="open">受付中</option><option value="paused">一時停止</option><option value="closed">受付終了</option></select></div><div class="field"><label for="tLimit">受付上限（デモ件数）</label><input id="tLimit" type="number" min="1" max="30" required></div></div><button class="button" type="submit">編集内容を申請する</button><p class="notice">更新後は管理者が承認するまでマッチング一覧から非表示になります。</p></form></div>
 <div class="card"><h2 class="section-title">届いた申し込み</h2><div id="teacherInbox" class="stack"></div></div></div>
-<div class="card"><h2 class="section-title">新しい先生の自己登録</h2><p class="notice">新任の先生が自分で仮登録する想定です。登録後は管理者の承認が必要です。</p><form id="teacherRegisterForm" class="search-grid"><div class="field"><label for="newTeacherName">教員名（架空）</label><input id="newTeacherName" required maxlength="40" placeholder="例：I先生（架空）"></div><div class="field"><label for="newTeacherSubject">担当教科</label><input id="newTeacherSubject" required maxlength="50" placeholder="例：理科"></div><div class="field"><label for="newTeacherKeywords">専門分野（読点区切り）</label><input id="newTeacherKeywords" required maxlength="180" placeholder="例：科学、環境、生物"></div><div class="field" style="align-self:end"><button class="button" type="submit">仮登録して承認待ちにする</button></div></form></div>
+<div class="card"><h2 class="section-title">新しい先生の自己登録</h2><p class="notice">新任の先生による自己登録の流れを再現するフォームです。今のデモログインIDと新規登録情報はまだ紐づきません。管理者承認の動作を試せます。</p><form id="teacherRegisterForm" class="search-grid"><div class="field"><label for="newTeacherName">教員名（架空）</label><input id="newTeacherName" required maxlength="40" placeholder="例：I先生（架空）"></div><div class="field"><label for="newTeacherSubject">担当教科</label><input id="newTeacherSubject" required maxlength="50" placeholder="例：理科"></div><div class="field"><label for="newTeacherKeywords">専門分野（読点区切り）</label><input id="newTeacherKeywords" required maxlength="180" placeholder="例：科学、環境、生物"></div><div class="field" style="align-self:end"><button class="button" type="submit">仮登録して承認待ちにする</button></div></form></div>
 </section>
-<section id="page-admin" class="stack hidden"><div class="card"><h2 class="section-title">学校側管理者の操作デモ</h2><p class="privacy-note">「管理者」を選択しても実際の管理権限は発生しません。これは校長・教頭・進路指導担当者向け画面の操作模型です。本番ではMicrosoft認証、個別権限、監査ログが必須です。</p><div class="statrow" id="adminSummary"></div></div><div class="split"><div class="card"><h2 class="section-title">教員登録の承認・在籍状況</h2><div id="adminTeachers" class="stack"></div></div><div class="card"><h2 class="section-title">大学情報の更新承認</h2><div id="adminUpdates" class="stack"></div></div></div><div class="split"><div class="card"><h2 class="section-title">改善要望</h2><div id="adminFeedback" class="stack"></div></div><div class="card"><h2 class="section-title">管理ログ・デモデータ管理</h2><div id="adminLog" class="stack" style="max-height:280px;overflow:auto"></div><div class="toolbar"><button class="button secondary" id="exportDemo">デモデータをJSONで出力</button><button class="button ghost" id="resetDemo">デモデータを初期化</button></div></div></div></section>
+<section id="page-admin" class="stack hidden"><div class="card"><h2 class="section-title">学校側管理者の操作デモ</h2><p class="privacy-note">この画面は管理者用の操作模型です。表示制限はブラウザ上のデモであり、実際の権限確認ではありません。本番ではMicrosoft認証、サーバー側の権限管理、監査ログが必須です。</p><div class="statrow" id="adminSummary"></div></div><div class="split"><div class="card"><h2 class="section-title">教員登録の承認・在籍状況</h2><div id="adminTeachers" class="stack"></div></div><div class="card"><h2 class="section-title">大学情報の更新承認</h2><div id="adminUpdates" class="stack"></div></div></div><div class="split"><div class="card"><h2 class="section-title">改善要望</h2><div id="adminFeedback" class="stack"></div></div><div class="card"><h2 class="section-title">管理ログ・デモデータ管理</h2><div id="adminLog" class="stack" style="max-height:280px;overflow:auto"></div><div class="toolbar"><button class="button secondary" id="exportDemo">デモデータをJSONで出力</button><button class="button ghost" id="resetDemo">デモデータを初期化</button></div></div></div></section>
 <section id="page-updates" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">大学情報の更新候補</h2><p class="notice">将来的には公式募集要項などの変更を自動検出します。現在は自動取得を行わず、仮の更新候補を手動登録して承認の流れを試します。</p><form id="updateForm" class="stack"><div class="field"><label for="updateUni">大学（仮称）</label><input id="updateUni" required maxlength="80" placeholder="例：サンプル大学"></div><div class="field"><label for="updateYear">対象年度</label><input id="updateYear" maxlength="10" value="2027" inputmode="numeric"></div><div class="field"><label for="updateInfo">変更内容（架空の例）</label><textarea id="updateInfo" required maxlength="420" placeholder="例：募集要項の新しい版が公開された（架空の情報）"></textarea></div><div class="field"><label for="updateUrl">出典URL（任意・デモは未検証）</label><input type="url" id="updateUrl" placeholder="https://example.org/..."></div><button class="button" type="submit">確認待ちの更新候補を追加</button></form></div><div class="card"><h2 class="section-title">公開用の更新一覧</h2><div id="publishedUpdates" class="stack"></div></div></div></section>
 <section id="page-feedback" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">改善要望・不具合報告</h2><p class="notice">匿名の体験用フォームです。外部へ送信されず、この端末内のデモ一覧にのみ記録されます。</p><form id="feedbackForm" class="stack"><div class="field"><label for="feedbackKind">種類</label><select id="feedbackKind"><option>機能の提案</option><option>操作の不具合</option><option>情報の誤り</option><option>その他</option></select></div><div class="field"><label for="feedbackText">内容</label><textarea id="feedbackText" required maxlength="500" placeholder="個人情報を書かずに、改善してほしい点をご記入ください。"></textarea></div><button class="button" type="submit">デモ報告を登録</button></form></div><div class="card"><h2 class="section-title">この端末の報告一覧</h2><div id="feedbackList" class="stack"></div></div></div></section>
 <p class="footer">進路コンパス — 企画段階の操作イメージです。学校・教職員の承認を得ていない非公式デモです。教員・大学情報は架空のサンプルです。</p>
 </main></div>
 <div id="modalBg" class="modal-bg hidden"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="row"><h2 id="modalTitle">面接練習の申し込み</h2><button id="closeModal" class="button ghost" aria-label="閉じる">閉じる</button></div><p class="sub" id="modalTeacher"></p><form id="requestForm"><div class="field"><label for="applicant">申込者（デモ用の呼び名）</label><input id="applicant" maxlength="30" required placeholder="例：生徒A"><span class="hint">実名ではなく仮の名前をご入力ください。</span></div><div class="field"><label for="purpose">相談目的</label><select id="purpose"><option>面接練習</option><option>研究テーマの相談</option><option>志望理由書の内容相談</option><option>その他</option></select></div><div class="field"><label for="requestTopic">相談内容</label><textarea id="requestTopic" required maxlength="400" placeholder="何を相談したいか簡潔に入力してください"></textarea></div><div class="field"><label for="preferred">希望条件（任意）</label><input id="preferred" maxlength="100" placeholder="例：放課後、20分程度"></div><div class="alert" style="margin:0">このボタンは送信テストです。実在の教員には通知されません。</div><button type="submit" class="button">デモ申し込みを作成</button></form></div></div>
+<nav class="app-bottom-nav hidden" id="appBottomNav" aria-label="アプリ内ナビゲーション">
+<button id="navBack" type="button" disabled><span aria-hidden="true">←</span><small>戻る</small></button>
+<button id="navHome" type="button"><span aria-hidden="true">⌂</span><small>ホーム</small></button>
+<button id="navForward" type="button" disabled><span aria-hidden="true">→</span><small>進む</small></button>
+</nav>
 <script>
 (()=>{'use strict';
 let teachers=[
@@ -154,7 +189,81 @@ function eligible(t){return t.active!==false&&t.approved!==false&&t.status==='op
 function persistDemo(){try{localStorage.setItem(DEMO_KEY,JSON.stringify({teachers,requests,studentProfile,todoItems,reviewHistory,feedbackItems,universityDrafts,adminLog:adminLog.slice(0,40)}));$('saveStatus').textContent='この端末にデモ保存中'}catch(e){$('saveStatus').textContent='デモ保存不可：この画面を閉じると消える場合があります'}$('requestBadge').textContent=requests.length?'('+requests.length+')':''}
 function audit(msg){adminLog.unshift({id:newId(),time:stampNow(),msg});adminLog=adminLog.slice(0,40);persistDemo()}
 
-function showPage(p){Object.keys(pages).forEach(k=>$('page-'+k).classList.toggle('hidden',k!==p));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));$('pageTitle').textContent=pages[p][0];$('pageSubtitle').textContent=pages[p][1];if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();window.scrollTo({top:0,behavior:'smooth'});}
+// Ver.5 デモ用ログイン。公開HTMLに資格情報が含まれ、本物の認証・権限管理ではありません。
+const DEMO_USERS={
+  'student-demo':{password:'student123',role:'student',name:'生徒デモ'},
+  'teacher-demo':{password:'teacher123',role:'teacher',name:'先生デモ',teacherId:'A'},
+  'admin-demo':{password:'admin123',role:'admin',name:'管理者デモ'}
+};
+const ROLE_PAGES={
+  student:['home','match','recommend','documents','research','activities','requests','interview','profile','history','feedback'],
+  teacher:['teacherportal','feedback'],
+  admin:['admin','updates','school','feedback']
+};
+const ROLE_NAMES={student:'生徒',teacher:'先生',admin:'管理者'};
+const ROLE_START={student:'home',teacher:'teacherportal',admin:'admin'};
+const SESSION_KEY='shinro_compass_v5_demo_session';
+let sessionAccount=null;
+let navStack=[],navPos=-1;
+function permitted(p){return !!sessionAccount && ROLE_PAGES[sessionAccount.role].includes(p)}
+function updateNavButtons(){
+ $('navBack').disabled=navPos<=0;
+ $('navForward').disabled=navPos<0 || navPos>=navStack.length-1;
+}
+function closeMobileMenu(){document.querySelector('.sidebar').classList.remove('is-open');$('navShade').classList.add('hidden');$('menuToggle').setAttribute('aria-expanded','false')}
+function updateAccountUI(){
+ let inSession=!!sessionAccount;
+ $('appShell').classList.toggle('app-locked',!inSession);
+ $('loginScreen').classList.toggle('hidden',inSession);
+ $('appBottomNav').classList.toggle('hidden',!inSession);
+ closeMobileMenu();
+ if(!inSession)return;
+ const name=ROLE_NAMES[sessionAccount.role];
+ $('loginIndicator').textContent=name+'としてログイン（デモ）';
+ $('sidebarRoleLabel').textContent=sessionAccount.name+' ／ '+name;
+ $('mobileRoleLabel').textContent=name+'用マイページ';
+ document.querySelectorAll('.navbtn').forEach(b=>{b.hidden=!permitted(b.dataset.page)});
+ document.querySelectorAll('[data-go]').forEach(b=>{b.hidden=!permitted(b.dataset.go)});
+ // 生徒の画面に管理者用設定を表示しない。
+ document.querySelectorAll('[data-admin-only]').forEach(el=>{el.hidden=sessionAccount.role!=='admin'});
+ if(sessionAccount.role==='teacher')selectedTeacherId=sessionAccount.teacherId;
+ updateNavButtons();
+}
+function performLogin(id,pw){
+ const row=DEMO_USERS[id];
+ if(!row||row.password!==pw){$('loginError').textContent='デモIDまたはパスワードが違います。下の試用アカウントを確認してください。';return false;}
+ sessionAccount={id,role:row.role,name:row.name,teacherId:row.teacherId||null};
+ try{sessionStorage.setItem(SESSION_KEY,id)}catch(e){}
+ $('demoLoginPassword').value='';$('loginError').textContent='';
+ navStack=[];navPos=-1;updateAccountUI();showPage(ROLE_START[row.role]);return true;
+}
+function performLogout(){
+ sessionAccount=null;navStack=[];navPos=-1;
+ try{sessionStorage.removeItem(SESSION_KEY)}catch(e){}
+ updateAccountUI();$('demoLoginForm').reset();$('demoLoginId').focus();
+}
+$('demoLoginForm').addEventListener('submit',e=>{e.preventDefault();performLogin($('demoLoginId').value.trim(),$('demoLoginPassword').value)});
+document.querySelectorAll('[data-fill-login]').forEach(b=>b.addEventListener('click',()=>{
+ const role=b.dataset.fillLogin;const entry={student:'student-demo',teacher:'teacher-demo',admin:'admin-demo'}[role];
+ $('demoLoginId').value=entry;$('demoLoginPassword').value='';$('loginError').textContent='';$('demoLoginPassword').focus();
+}));
+$('togglePassword').addEventListener('click',()=>{const pass=$('demoLoginPassword');pass.type=pass.type==='password'?'text':'password';$('togglePassword').textContent=pass.type==='password'?'表示':'隠す'});
+$('logoutDesktop').addEventListener('click',performLogout);$('logoutMobile').addEventListener('click',performLogout);
+$('menuToggle').addEventListener('click',()=>{let el=document.querySelector('.sidebar');const opened=el.classList.toggle('is-open');$('navShade').classList.toggle('hidden',!opened);$('menuToggle').setAttribute('aria-expanded',String(opened))});
+$('navShade').addEventListener('click',closeMobileMenu);
+$('navBack').addEventListener('click',()=>{if(navPos>0){navPos--;showPage(navStack[navPos],true)}});
+$('navForward').addEventListener('click',()=>{if(navPos<navStack.length-1){navPos++;showPage(navStack[navPos],true)}});
+$('navHome').addEventListener('click',()=>{if(sessionAccount)showPage(ROLE_START[sessionAccount.role])});
+
+function showPage(p,fromHistory=false){
+ if(!permitted(p)||!pages[p])return;
+ if(!fromHistory){if(navStack[navPos]!==p){navStack=navStack.slice(0,navPos+1);navStack.push(p);navPos=navStack.length-1;}}
+ Object.keys(pages).forEach(k=>$('page-'+k).classList.toggle('hidden',k!==p));
+ document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));
+ $('pageTitle').textContent=pages[p][0];$('pageSubtitle').textContent=pages[p][1];
+ if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();
+ closeMobileMenu();updateNavButtons();window.scrollTo({top:0,behavior:'instant'});
+}
 document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
 document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
 function parts(s){return(s||'').toLowerCase().trim().split(/[\s、。，・,./／：:;；\n]+/).filter(x=>x.length>1);}
@@ -286,8 +395,7 @@ $('makeQuestions').addEventListener('click',()=>{
  $('copyQuestions').addEventListener('click',()=>copyText(chosen.map((q,i)=>(i+1)+'. '+q).join('\n'),'想定質問をコピーしました。'));
 });
 
-// Ver.4: すべて仮ユーザー、ブラウザ内のデモ。認証・共有DB・外部通知は行わない。
-document.querySelectorAll('[data-role]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-role]').forEach(x=>x.classList.toggle('chosen',x===b));showPage({student:'profile',teacher:'teacherportal',admin:'admin'}[b.dataset.role]);}));
+// Ver.5: 役割はログインIDに紐づけて表示します（ブラウザ内の操作デモ）。
 function safeVal(id){return $(id).value.trim()}
 function renderProfile(){
  $('pfName').value=studentProfile.nickname||'';$('pfUniversity').value=studentProfile.university||'';$('pfMethod').value=studentProfile.method||'総合型選抜';$('pfTopic').value=studentProfile.topic||'';$('pfDeadline').value=studentProfile.deadline||'';
@@ -297,7 +405,7 @@ function renderProfile(){
  $('taskList').querySelectorAll('[data-task-toggle]').forEach(b=>b.addEventListener('change',()=>{const t=todoItems.find(x=>x.id===b.dataset.taskToggle);if(t)t.done=b.checked;persistDemo();renderProfile()}));
  $('taskList').querySelectorAll('[data-task-remove]').forEach(b=>b.addEventListener('click',()=>{todoItems=todoItems.filter(t=>t.id!==b.dataset.taskRemove);persistDemo();renderProfile()}));
 }
-$('profileForm').addEventListener('submit',e=>{e.preventDefault();studentProfile={nickname:safeVal('pfName'),university:safeVal('pfUniversity'),method:safeVal('pfMethod'),topic:safeVal('pfTopic'),deadline:safeVal('pfDeadline')};persistDemo();renderProfile();alert('仮プロフィールをこの端末に保存しました。')});
+$('profileForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='student')return;studentProfile={nickname:safeVal('pfName'),university:safeVal('pfUniversity'),method:safeVal('pfMethod'),topic:safeVal('pfTopic'),deadline:safeVal('pfDeadline')};persistDemo();renderProfile();alert('仮プロフィールをこの端末に保存しました。')});
 $('addTask').addEventListener('click',()=>{const text=safeVal('taskInput');if(!text)return;todoItems.unshift({id:newId(),text,done:false});$('taskInput').value='';persistDemo();renderProfile()});
 function renderHistory(){
  const el=$('historyList');if(!reviewHistory.length){el.innerHTML='<div class="empty">まだ保存されたデモ文章はありません。「書類チェック」でサンプル文章を保存してください。</div>';$('historyCompare').innerHTML='';return}
@@ -310,16 +418,16 @@ function renderHistory(){
 $('saveDocVersion').addEventListener('click',()=>{const text=safeVal('docText');if(!text){alert('サンプル文章を入力してください。');return}if(text.length>12000){alert('デモ保存は12000文字以内にしてください。');return}reviewHistory.push({id:newId(),text,type:safeVal('docType'),time:stampNow()});reviewHistory=reviewHistory.slice(-12);persistDemo();showPage('history')});
 function teacherOptions(){return teachers.map(t=>`<option value="${htmlEscape(t.id)}">${htmlEscape(t.name)}${t.approved===false?'（承認待ち）':''}</option>`).join('')}
 function renderTeacherPortal(){
- const pick=$('teacherPicker');pick.innerHTML=teacherOptions();if(!teachers.some(t=>t.id===selectedTeacherId))selectedTeacherId=teachers[0].id;pick.value=selectedTeacherId;
+ const pick=$('teacherPicker');if(sessionAccount?.role==='teacher'){selectedTeacherId=sessionAccount.teacherId;pick.innerHTML=teacherOptions();pick.disabled=true}else{pick.innerHTML=teacherOptions();if(!teachers.some(t=>t.id===selectedTeacherId))selectedTeacherId=teachers[0].id;pick.disabled=false}pick.value=selectedTeacherId;
  const t=teachers.find(x=>x.id===selectedTeacherId);if(!t)return;
  $('tName').value=t.name;$('tSubject').value=t.subject;$('tKeywords').value=(t.keywords||[]).join('、');$('tStatus').value=t.status||'open';$('tLimit').value=t.limit||3;
  const inbox=requests.filter(r=>r.teacherId===t.id);
  $('teacherInbox').innerHTML=`<p class="notice">${!t.active?'この先生は管理者により非表示です。':t.approved===false?'プロフィール承認待ちです。':''} 新着通知（アプリ内デモ）：${inbox.filter(r=>r.status==='pending').length}件。端末へのプッシュ通知はまだ届きません。</p>`+(inbox.length?inbox.map(r=>`<div class="compact-card"><div class="row"><strong>${htmlEscape(r.applicant)}</strong><span class="pill blue">${htmlEscape(statLabels[r.status]||'確認待ち')}</span></div><p>${htmlEscape(r.purpose)}：${htmlEscape(r.topic)}</p><p>希望：${htmlEscape(r.preferred||'指定なし')}</p>${r.reply?`<p>返信：${htmlEscape(r.reply)}</p>`:''}<div class="field"><label for="response-${r.id}">返信（仮の内容のみ）</label><input id="response-${r.id}" maxlength="250" value="${htmlEscape(r.reply||'')}" placeholder="例：来週の放課後に調整しましょう"></div><div class="miniactions"><button class="button secondary" data-req="${r.id}" data-state="approved">承認</button><button class="button ghost" data-req="${r.id}" data-state="scheduling">日程調整</button><button class="button ghost" data-req="${r.id}" data-state="declined">辞退</button><button class="button ghost" data-req="${r.id}" data-state="completed">完了</button></div></div>`).join(''):'<div class="empty">この先生への申し込みはまだありません。「先生マッチング」から作ってみてください。</div>');
  $('teacherInbox').querySelectorAll('[data-req]').forEach(b=>b.addEventListener('click',()=>{let r=requests.find(x=>x.id===b.dataset.req);if(!r)return;r.status=b.dataset.state;r.reply=$('response-'+r.id).value.trim();audit('先生側の申し込み対応（デモ）：'+statLabels[r.status]);renderTeacherPortal()}));
 }
-$('teacherPicker').addEventListener('change',()=>{selectedTeacherId=safeVal('teacherPicker');renderTeacherPortal()});
-$('teacherEditForm').addEventListener('submit',e=>{e.preventDefault();const t=teachers.find(x=>x.id===selectedTeacherId);if(!t)return;t.name=safeVal('tName');t.subject=safeVal('tSubject');t.keywords=safeVal('tKeywords').split(/[、,，\n]+/).map(x=>x.trim()).filter(Boolean).slice(0,30);t.status=safeVal('tStatus');t.limit=Math.max(1,Math.min(30,Number(safeVal('tLimit'))||3));t.description=t.subject+'と関連する分野の相談に対応（デモ登録）';t.approved=false;audit('教員プロフィール更新申請：'+t.name);renderTeacherPortal();renderMatch();alert('変更を承認待ちにしました。管理者画面から確認できます。')});
-$('teacherRegisterForm').addEventListener('submit',e=>{e.preventDefault();const name=safeVal('newTeacherName');if(!name||!safeVal('newTeacherSubject')||!safeVal('newTeacherKeywords'))return;const id=newId();const kws=safeVal('newTeacherKeywords').split(/[、,，\n]+/).map(x=>x.trim()).filter(Boolean);teachers.push({id,name,subject:safeVal('newTeacherSubject'),keywords:kws,description:'自己登録された仮のプロフィール。',fields:[],active:true,approved:false,status:'open',limit:3});selectedTeacherId=id;['newTeacherName','newTeacherSubject','newTeacherKeywords'].forEach(x=>$(x).value='');audit('新規教員登録申請：'+name);renderTeacherPortal();alert('承認待ちとして登録しました。管理者画面で承認できます。')});
+$('teacherPicker').addEventListener('change',()=>{if(sessionAccount?.role!=='teacher')return;selectedTeacherId=sessionAccount.teacherId;renderTeacherPortal()});
+$('teacherEditForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='teacher')return;const t=teachers.find(x=>x.id===selectedTeacherId);if(!t)return;t.name=safeVal('tName');t.subject=safeVal('tSubject');t.keywords=safeVal('tKeywords').split(/[、,，\n]+/).map(x=>x.trim()).filter(Boolean).slice(0,30);t.status=safeVal('tStatus');t.limit=Math.max(1,Math.min(30,Number(safeVal('tLimit'))||3));t.description=t.subject+'と関連する分野の相談に対応（デモ登録）';t.approved=false;audit('教員プロフィール更新申請：'+t.name);renderTeacherPortal();renderMatch();alert('変更を承認待ちにしました。管理者画面から確認できます。')});
+$('teacherRegisterForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='teacher')return;const name=safeVal('newTeacherName');if(!name||!safeVal('newTeacherSubject')||!safeVal('newTeacherKeywords'))return;const id=newId();const kws=safeVal('newTeacherKeywords').split(/[、,，\n]+/).map(x=>x.trim()).filter(Boolean);teachers.push({id,name,subject:safeVal('newTeacherSubject'),keywords:kws,description:'自己登録された仮のプロフィール。',fields:[],active:true,approved:false,status:'open',limit:3});['newTeacherName','newTeacherSubject','newTeacherKeywords'].forEach(x=>$(x).value='');audit('新規教員登録申請：'+name);renderTeacherPortal();alert('承認待ちとして登録しました。管理者画面で承認できます。')});
 function renderAdmin(){
  $('adminSummary').innerHTML=`<span class="stat">教員 ${teachers.length}人</span><span class="stat">承認待ち ${teachers.filter(t=>t.approved===false).length}件</span><span class="stat">申し込み ${requests.length}件</span>`;
  $('adminTeachers').innerHTML=teachers.map(t=>`<div class="compact-card"><div class="row"><strong>${htmlEscape(t.name)}</strong><span class="${t.approved===false?'warnlabel':'goodlabel'}">${!t.active?'非表示':t.approved===false?'承認待ち':'公開中'}</span></div><p>${htmlEscape(t.subject)}／${htmlEscape((t.keywords||[]).slice(0,5).join('・'))}</p><div class="miniactions">${t.approved===false?`<button class="button secondary" data-teacher-approve="${t.id}">登録を承認</button>`:''}<button class="button ghost" data-teacher-toggle="${t.id}">${t.active===false?'在籍として復帰':'異動・退職で非表示'}</button></div></div>`).join('');
@@ -332,14 +440,20 @@ function renderAdmin(){
  $('adminLog').innerHTML=adminLog.length?adminLog.map(x=>`<p class="notice">${htmlEscape(x.time)}　${htmlEscape(x.msg)}</p>`).join(''):'<p class="notice">操作履歴はありません。端末内の仮ログです。</p>';
 }
 function renderUpdates(){ $('publishedUpdates').innerHTML=universityDrafts.filter(x=>x.status==='approved').length?universityDrafts.filter(x=>x.status==='approved').map(x=>`<div class="compact-card"><strong>${htmlEscape(x.university)}／${htmlEscape(x.year)}年度</strong><p>${htmlEscape(x.info)}</p><p>管理者デモ承認：${htmlEscape(x.approvedAt||'不明')}。公式情報の正確性は未検証です。</p>${x.url?`<a href="${htmlEscape(x.url)}" target="_blank" rel="noopener noreferrer">登録された参考URLを開く ↗</a>`:''}</div>`).join(''):'<div class="empty">確認済みの大学情報はまだありません。大学情報の自動収集は未実装です。</div>'}
-$('updateForm').addEventListener('submit',e=>{e.preventDefault();let url=safeVal('updateUrl');if(url&&!/^https:\/\//i.test(url)){alert('URLはhttps://から始めてください。');return}universityDrafts.unshift({id:newId(),university:safeVal('updateUni'),year:safeVal('updateYear')||'未記入',info:safeVal('updateInfo'),url,status:'pending',addedAt:stampNow()});$('updateInfo').value='';$('updateUrl').value='';audit('大学情報の更新候補を手動で追加');renderUpdates();alert('デモ更新候補を管理者の確認待ちにしました。')});
+$('updateForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='admin')return;let url=safeVal('updateUrl');if(url&&!/^https:\/\//i.test(url)){alert('URLはhttps://から始めてください。');return}universityDrafts.unshift({id:newId(),university:safeVal('updateUni'),year:safeVal('updateYear')||'未記入',info:safeVal('updateInfo'),url,status:'pending',addedAt:stampNow()});$('updateInfo').value='';$('updateUrl').value='';audit('大学情報の更新候補を手動で追加');renderUpdates();alert('デモ更新候補を管理者の確認待ちにしました。')});
 function renderFeedback(){$('feedbackList').innerHTML=feedbackItems.length?feedbackItems.slice().reverse().map(x=>`<div class="compact-card"><strong>${htmlEscape(x.kind)}</strong><p>${htmlEscape(x.text)}</p></div>`).join(''):'<div class="empty">まだ報告はありません。</div>'}
 $('feedbackForm').addEventListener('submit',e=>{e.preventDefault();const text=safeVal('feedbackText');if(!text)return;feedbackItems.push({id:newId(),kind:safeVal('feedbackKind'),text});$('feedbackText').value='';persistDemo();renderFeedback();alert('このブラウザ内のデモに登録しました。学校には送信されていません。')});
-$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'4',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
-$('resetDemo').addEventListener('click',()=>{if(!confirm('この端末に保存したVer.4のデモデータをすべて初期化しますか？'))return;try{localStorage.removeItem(DEMO_KEY)}catch(e){}location.reload()});
+$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'5',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
+$('resetDemo').addEventListener('click',()=>{if(!confirm('この端末に保存したVer.5のデモデータをすべて初期化しますか？'))return;try{localStorage.removeItem(DEMO_KEY)}catch(e){}location.reload()});
 persistDemo();
 
-updateSchool();renderMatch();renderRequests();showPage('home');})();
+updateSchool();renderMatch();renderRequests();
+let priorId=null;try{priorId=sessionStorage.getItem(SESSION_KEY)}catch(e){}
+if(priorId&&DEMO_USERS[priorId]){
+ const info=DEMO_USERS[priorId];sessionAccount={id:priorId,role:info.role,name:info.name,teacherId:info.teacherId||null};
+ updateAccountUI();showPage(ROLE_START[info.role]);
+}else{updateAccountUI()}
+})();
 </script>
 </body>
 </html>
