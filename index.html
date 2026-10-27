@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>進路コンパス Ver.5.1 | 校内総合型選抜支援デモ</title>
+<title>進路コンパス Ver.6.0 無料試作 | 校内総合型選抜支援デモ</title>
 <meta name="theme-color" content="#12213a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="進路コンパス"><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="志望理由書・活動報告書のチェック、研究活動の提案、大学の情報収集、先生マッチングをまとめた学校向け試作ツール">
 <style>
 :root{--bg:#f6f8fc;--ink:#15233b;--muted:#64748b;--line:#e1e7f0;--primary:#2867dc;--primary2:#1d4fb8;--soft:#eaf1ff;--white:#fff;--radius:16px;--shadow:0 10px 32px #142d5010}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.58}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9bc0ff;outline-offset:2px}a{color:var(--primary)}.layout{min-height:100vh;display:grid;grid-template-columns:248px 1fr}.sidebar{background:#12213a;color:#e8eef9;padding:28px 18px;display:flex;flex-direction:column;gap:22px}.brand{padding:0 12px}.brand .mark{background:#65a0ff;color:#092347;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;font-weight:800;font-size:22px;margin-bottom:10px}.brand b{display:block;font-size:20px;letter-spacing:.05em}.brand small{display:block;color:#adbdd7;margin-top:3px}.menu{display:grid;gap:5px}.navbtn{color:#b9c8de;border:0;border-radius:11px;background:transparent;text-align:left;padding:11px 13px;font-size:14px}.navbtn:hover,.navbtn.active{background:#263956;color:white}.navbtn .ico{display:inline-block;width:27px}.side-note{margin-top:auto;background:#233451;border:1px solid #384b68;padding:14px;border-radius:13px;font-size:12px;color:#ccdaef}.main{padding:32px clamp(16px,4vw,52px) 70px;max-width:1320px;width:100%;margin:auto}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--primary);text-transform:uppercase}.heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:5px 0 22px}.heading h1{font-size:clamp(23px,2.8vw,32px);letter-spacing:-.02em;margin:0}.heading p{color:var(--muted);margin:7px 0 0;font-size:14px}.pill{display:inline-flex;align-items:center;background:#edf2fa;color:#52647f;padding:5px 10px;font-size:11px;font-weight:700;border-radius:100px;white-space:nowrap}.pill.blue{background:#e6f0ff;color:#2860c2}.alert{background:#fffae9;border:1px solid #f1dda1;color:#66521f;border-radius:13px;padding:12px 15px;font-size:12px;margin-bottom:20px}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:21px}.section-title{font-size:17px;margin:0 0 13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.stack{display:grid;gap:17px}.search-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:16px}.field{display:grid;gap:6px;font-size:13px;font-weight:650}.field label{font-weight:650}.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #cdd7e5;border-radius:10px;padding:11px 12px;outline:none;color:var(--ink);font-size:14px}.field textarea{min-height:120px;resize:vertical}.hint{font-size:11px;font-weight:400;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}.chip{border:1px solid #d5dfea;background:#f7f9fe;padding:6px 10px;border-radius:100px;font-size:12px;color:#536780}.button{border:none;background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;white-space:nowrap}.button:hover{background:var(--primary2)}.button.secondary{background:#ebf2ff;color:#255ab8}.button.ghost{background:#f2f5f9;color:#344762}.button:disabled{opacity:.5;cursor:not-allowed}.teacher-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.teacher{padding:19px;display:flex;flex-direction:column;gap:12px}.teacher .avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:#edf3ff;color:#215acc;font-weight:800}.teacher h3{margin:0;font-size:17px}.teacher .meta{font-size:12px;color:var(--muted)}.teacher .desc{font-size:13px;color:#40516a;margin:0;min-height:42px}.teacher .why{background:#f3f7fd;border-left:3px solid #83acf3;color:#465a7a;font-size:12px;padding:9px 10px;border-radius:0 7px 7px 0}.teacher .last{margin-top:auto}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.num{font-size:12px;color:var(--muted)}.result-list{padding-left:20px;margin:8px 0 0;color:#3b4c63;font-size:14px}.result-list li{margin:8px 0}.well{background:#f4f7fc;border-radius:11px;padding:16px;font-size:13px}.notice{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{background:#f1f5fb;color:#526781;border:0;border-radius:9px;padding:8px 12px;font-size:12px}.tab.selected{background:#dceafa;color:#1b56b5;font-weight:700}.hidden{display:none!important}.empty{text-align:center;padding:46px 10px;color:var(--muted);font-size:13px}.report{background:#f6f9ff;border:1px solid #dfebfc;border-radius:12px;padding:16px;font-size:13px}.report b{font-size:14px}.report p{margin:7px 0}.request{background:#f7f9fc;border:1px solid #e0e7f0;border-radius:12px;padding:14px;font-size:13px}.request p{margin:4px 0;color:#64748b}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#eef4fe;border-radius:9px;padding:10px 12px;font-size:13px;color:#315b94}.stat strong{font-size:19px;margin-right:3px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fff}.feature strong{display:block;margin-bottom:7px}.feature p{font-size:12px;color:var(--muted);margin:0}.modal-bg{position:fixed;inset:0;background:#10233d9e;display:flex;align-items:center;justify-content:center;padding:16px;z-index:5}.modal{background:#fff;width:min(540px,100%);max-height:90vh;overflow:auto;border-radius:17px;padding:24px;box-shadow:0 30px 90px #0c1c3970}.modal h2{margin:0;font-size:21px}.modal .sub{font-size:12px;color:var(--muted);margin:4px 0 18px}.modal form{display:grid;gap:13px}.footer{margin:30px 0 0;font-size:12px;color:#8a96aa;text-align:center}@media(max-width:980px){.layout{display:block}.sidebar{padding:14px 18px 12px;gap:10px}.brand{display:flex;align-items:center;gap:11px}.brand .mark{margin:0;width:33px;height:33px;font-size:17px}.brand b{font-size:16px}.brand small{font-size:11px}.menu{display:flex;gap:6px;overflow-x:auto;padding-bottom:3px}.navbtn{white-space:nowrap;padding:9px 11px}.side-note{display:none}.main{padding:22px 16px 45px}}@media(max-width:700px){.search-grid,.teacher-grid,.split,.three{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.teacher .desc{min-height:0}.card{padding:17px}.teacher{padding:17px}}
@@ -65,13 +65,30 @@
 }
 /* 通知や申込フォームが開いている間はナビゲーションバーより前面に表示する。 */
 .modal-bg { z-index: 60; }
+
+/* Ver.6.0 Free Preview: 出願スケジュール・学校向けデモ案内。データは端末内のみ。 */
+.free-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.free-metric{border:1px solid #d9e5f5;background:#f6f9fe;border-radius:12px;padding:15px}
+.free-metric strong{display:block;font-size:24px;color:#2356a0}
+.free-metric small{display:block;color:#60748d;font-size:12px}
+.free-status{display:inline-block;background:#eef3fb;color:#3f608d;border-radius:100px;padding:4px 10px;font-size:11px;font-weight:700}
+.free-status.complete{background:#e5f7ee;color:#27704a}
+.free-status.soon{background:#fff1db;color:#92601c}
+.free-application{background:#fff;border:1px solid #dce6f3;border-radius:13px;padding:16px}
+.free-application strong{font-size:15px}
+.free-application p{margin:5px 0;font-size:12px;color:#62758a}
+.free-application .toolbar{margin-top:9px}
+.free-step{border-left:3px solid #7dabf2;background:#f7faff;border-radius:0 10px 10px 0;padding:10px 13px;font-size:13px}
+.free-step strong{display:block;margin-bottom:4px}
+.free-steps{display:grid;gap:10px}
+@media(max-width:760px){.free-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <div id="loginScreen" class="login-screen">
   <div class="login-panel">
-    <div class="login-brand"><span class="login-mark">進</span><div><strong>進路コンパス</strong><span>総合型選抜サポート・Ver.5</span></div></div>
+    <div class="login-brand"><span class="login-mark">進</span><div><strong>進路コンパス</strong><span>総合型選抜サポート・Ver.6.0</span></div></div>
     <span class="login-tag">校内向けアカウント設計デモ</span>
     <h1>ログイン</h1>
     <p class="login-intro">生徒・先生・管理者の画面を、アカウントごとに確認できます。</p>
@@ -102,29 +119,32 @@
 <button class="navbtn" data-page="requests"><span class="ico">◷</span>申し込み一覧 <span id="requestBadge"></span></button>
 <button class="navbtn" data-page="interview"><span class="ico">☷</span>面接の想定質問</button>
 <button class="navbtn" data-page="profile"><span class="ico">▣</span>受験マイページ</button>
+<button class="navbtn" data-page="applications"><span class="ico">▦</span>出願スケジュール</button>
 <button class="navbtn" data-page="history"><span class="ico">▤</span>添削履歴</button>
 <button class="navbtn" data-page="teacherportal"><span class="ico">♙</span>先生用マイページ</button>
 <button class="navbtn" data-page="admin"><span class="ico">⚑</span>管理者</button>
+<button class="navbtn" data-page="pitch"><span class="ico">▥</span>学校への導入提案</button>
 <button class="navbtn" data-page="updates"><span class="ico">↻</span>大学情報の更新</button>
 <button class="navbtn" data-page="feedback"><span class="ico">✉</span>ご意見・改善</button>
 <button class="navbtn" data-page="school"><span class="ico">⚙</span>学校向けの設定</button>
 </nav><div class="session-sidebar"><span id="sidebarRoleLabel">デモアカウント</span><button class="sidebar-logout" id="logoutDesktop" type="button">ログアウト</button></div><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。外部送信・AI API接続・校内認証は未実装です。</div>
 </aside>
-<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.5.1 デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
+<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.6.0 無料デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
 <div class="nav-shade hidden" id="navShade"></div>
 <main class="main">
 <div class="eyebrow">Student admissions support</div>
-<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 5.1 / 非公式デモ</span></div>
-<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.5.1操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
+<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 6.0 / 無料試作</span></div>
+<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.6.0操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
 <section id="page-home" class="stack">
-<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.5.1を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
+<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.6.0を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
 <div class="card" data-admin-only><div class="row wrapsmall"><div><div class="schoollabel">カスタマイズ対象</div><h2 id="homeSchoolName" style="font-size:19px;margin:0">学校名は未設定です</h2><p class="notice" id="homeGuidance">「学校向けの設定」から校内の進路相談窓口などを登録できます。</p></div><button class="button secondary" data-go="school">学校向けの設定</button></div></div>
 <div><h2 class="section-title">できること</h2><div class="feature-grid">
 <button class="feature-action" data-go="documents"><span class="ficon">▤</span><strong>書類チェック</strong><p>志望理由書・活動報告書・自己推薦書・自己PR文の構成と表現を分析します。</p><span class="microtag">AI未接続・ルールチェック</span></button>
 <button class="feature-action" data-go="research"><span class="ficon">⌕</span><strong>大学・教授・授業の調査</strong><p>大学の募集要項、教員、シラバスを探すための検索リンクをまとめます。</p><span class="microtag">公式情報の確認が必要</span></button>
 <button class="feature-action" data-go="recommend"><span class="ficon">✦</span><strong>活動・調査の推薦</strong><p>研究テーマと現状から、インタビュー・資料調査・実践活動の計画案を提示します。</p><span class="microtag">提案は仮のもの</span></button>
 <button class="feature-action" data-go="match"><span class="ficon">◎</span><strong>先生のマッチング</strong><p>専門分野と研究テーマから校内の相談相手を探します。現在は架空の先生です。</p><span class="microtag soon">実データと連携は後日</span></button>
-<button class="feature-action" data-go="interview"><span class="ficon">☷</span><strong>面接の想定質問</strong><p>志望理由や研究テーマに関する質問を自動で組み立てます。</p><span class="microtag">質問例の作成</span></button>
+<button class="feature-action" data-go="applications"><span class="ficon">▦</span><strong>出願スケジュール管理</strong><p>出願締切（本人入力）と準備すべき書類、進捗をまとめます。</p><span class="microtag">Ver.6.0新機能・端末内のみ</span></button>
+ <button class="feature-action" data-go="interview"><span class="ficon">☷</span><strong>面接の想定質問</strong><p>志望理由や研究テーマに関する質問を自動で組み立てます。</p><span class="microtag">質問例の作成</span></button>
 <button class="feature-action" data-go="school"><span class="ficon">⚙</span><strong>学校向けのカスタマイズ</strong><p>学校名や進路相談の手順を登録して、校内に合わせた画面にできます。</p><span class="microtag">このブラウザ内だけで保存</span></button>
 </div></div>
 <div class="card"><h2 class="section-title">実装状況と注意点</h2><div class="stepsline"><span class="dot">✓</span><span>書類の文字数・構成確認、活動案、先生の仮マッチングは動作します。</span></div><div class="stepsline"><span class="dot">—</span><span>大学の教授名や授業名は捏造せず、公式情報を探すリンクだけを作ります。</span></div><div class="stepsline"><span class="dot">—</span><span>高度な生成AIによる書類添削、学校アカウント認証、Teamsの申し込み送信は未実装です。</span></div><div class="stepsline"><span class="dot">!</span><span>公開用デモです。氏名、個人情報、実際の出願書類、先生の非公開情報は入力しないでください。</span></div></div>
@@ -175,6 +195,25 @@
  </form></div>
  <div class="card"><h2 class="section-title">準備の進み具合</h2><div id="profileOverview" class="well"></div><div class="field" style="margin-top:17px"><label for="taskInput">準備タスクを追加</label><input id="taskInput" maxlength="120" placeholder="例：活動報告書の構成を考える"></div><button class="button secondary" id="addTask" style="margin-top:9px">タスクを追加</button><div id="taskList" class="stack" style="margin-top:15px"></div></div></div>
 </section>
+
+<section id="page-applications" class="stack hidden">
+ <div class="alert"><strong>Ver.6.0無料デモ：</strong>出願情報はこのブラウザだけに保存されます。実在する受験校の非公開情報、氏名、受験番号、実際の提出書類は登録しないでください。</div>
+ <div class="free-grid" id="applicationStats" aria-live="polite"></div>
+ <div class="split">
+  <div class="card"><h2 class="section-title">架空の出願予定を登録する</h2>
+   <form id="applicationForm" class="stack">
+    <div class="field"><label for="appUni">大学・学部（架空名）</label><input id="appUni" maxlength="90" placeholder="例：サンプル大学・未来創造学部" required></div>
+    <div class="field"><label for="appMethod">入試方式</label><select id="appMethod"><option>総合型選抜</option><option>学校推薦型選抜</option><option>その他</option></select></div>
+    <div class="field"><label for="appDue">出願締切日（仮）</label><input type="date" id="appDue" required></div>
+    <div class="field"><label for="appDoc">準備する書類（架空の項目）</label><input id="appDoc" maxlength="120" placeholder="例：志望理由書、活動報告書" required></div>
+    <div class="field"><label for="appStage">準備状況</label><select id="appStage"><option value="notstarted">未着手</option><option value="working">準備中</option><option value="review">先生に確認を依頼中</option><option value="ready">提出準備完了</option></select></div>
+    <button class="button" type="submit">デモ出願予定を追加</button>
+   </form>
+   <p class="notice">締切は本人入力であり公式情報と連動しません。デモの例を使う場合も、日付の正確性は保証されません。</p>
+  </div>
+  <div class="card"><div class="row wrapsmall"><h2 class="section-title" style="margin:0">出願予定一覧</h2><button class="button ghost" type="button" id="loadApplicationSamples">架空の例を追加</button></div><div id="applicationList" class="stack" style="margin-top:15px"></div></div>
+ </div>
+</section>
 <section id="page-history" class="stack hidden"><div class="card"><h2 class="section-title">書類の版比較</h2><p class="notice">「書類チェック」から「デモ版を履歴に保存」を押すと、文章を比較できます。サンプル文章だけを使用してください。保存はこの端末だけです。</p><div id="historyList" class="stack"></div><div id="historyCompare" class="split" style="margin-top:16px"></div></div></section>
 <section id="page-teacherportal" class="stack hidden"><div class="card"><h2 class="section-title">先生のマイページ（ログインデモ）</h2><p class="notice">先生用IDに紐づく架空の先生を表示します。本人確認はまだ実装されていません。</p><div class="field"><label for="teacherPicker">ログイン中の先生（デモ）</label><select id="teacherPicker"></select></div></div>
 <div class="split"><div class="card"><h2 class="section-title">プロフィール・受付設定</h2><form id="teacherEditForm" class="stack"><div class="field"><label for="tName">表示名（仮名）</label><input id="tName" maxlength="45" required></div><div class="field"><label for="tSubject">担当教科</label><input id="tSubject" maxlength="80" required></div><div class="field"><label for="tKeywords">対応可能な分野・テーマ（読点区切り）</label><textarea id="tKeywords" maxlength="350" required></textarea></div><div class="search-grid"><div class="field"><label for="tStatus">受付状況</label><select id="tStatus"><option value="open">受付中</option><option value="paused">一時停止</option><option value="closed">受付終了</option></select></div><div class="field"><label for="tLimit">受付上限（デモ件数）</label><input id="tLimit" type="number" min="1" max="30" required></div></div><button class="button" type="submit">編集内容を申請する</button><p class="notice">更新後は管理者が承認するまでマッチング一覧から非表示になります。</p></form></div>
@@ -182,6 +221,28 @@
 <div class="card"><h2 class="section-title">新しい先生の自己登録</h2><p class="notice">新任の先生による自己登録の流れを再現するフォームです。今のデモログインIDと新規登録情報はまだ紐づきません。管理者承認の動作を試せます。</p><form id="teacherRegisterForm" class="search-grid"><div class="field"><label for="newTeacherName">教員名（架空）</label><input id="newTeacherName" required maxlength="40" placeholder="例：I先生（架空）"></div><div class="field"><label for="newTeacherSubject">担当教科</label><input id="newTeacherSubject" required maxlength="50" placeholder="例：理科"></div><div class="field"><label for="newTeacherKeywords">専門分野（読点区切り）</label><input id="newTeacherKeywords" required maxlength="180" placeholder="例：科学、環境、生物"></div><div class="field" style="align-self:end"><button class="button" type="submit">仮登録して承認待ちにする</button></div></form></div>
 </section>
 <section id="page-admin" class="stack hidden"><div class="card"><h2 class="section-title">学校側管理者の操作デモ</h2><p class="privacy-note">この画面は管理者用の操作模型です。表示制限はブラウザ上のデモであり、実際の権限確認ではありません。本番ではMicrosoft認証、サーバー側の権限管理、監査ログが必須です。</p><div class="statrow" id="adminSummary"></div></div><div class="split"><div class="card"><h2 class="section-title">教員登録の承認・在籍状況</h2><div id="adminTeachers" class="stack"></div></div><div class="card"><h2 class="section-title">大学情報の更新承認</h2><div id="adminUpdates" class="stack"></div></div></div><div class="split"><div class="card"><h2 class="section-title">改善要望</h2><div id="adminFeedback" class="stack"></div></div><div class="card"><h2 class="section-title">管理ログ・デモデータ管理</h2><div id="adminLog" class="stack" style="max-height:280px;overflow:auto"></div><div class="toolbar"><button class="button secondary" id="exportDemo">デモデータをJSONで出力</button><button class="button ghost" id="resetDemo">デモデータを初期化</button></div></div></div></section>
+
+<section id="page-pitch" class="stack hidden">
+ <div class="card"><span class="pill blue">学校向けデモ資料／追加費用0円で作成</span><h2 class="section-title" style="font-size:22px;margin-top:10px">進路コンパスの導入提案</h2>
+ <p>総合型選抜に向けた準備を、複数のツールではなく一つの画面にまとめる提案です。現在の画面は<strong>架空データによる操作デモ</strong>であり、学校の正式なシステムではありません。</p>
+ <div class="free-grid"><div class="free-metric"><strong>3種類</strong><small>生徒・先生・管理者のデモ画面</small></div><div class="free-metric"><strong>0円</strong><small>現段階の追加サービス料金の目標</small></div><div class="free-metric"><strong>未接続</strong><small>本物の認証・外部AI・校内データ共有</small></div></div>
+ </div>
+ <div class="split"><div class="card"><h2 class="section-title">5分間の実演シナリオ</h2><div class="free-steps">
+ <div class="free-step"><strong>① 生徒画面</strong>先生マッチングで架空の相談先を検索し、申込の流れを確認します。</div>
+ <div class="free-step"><strong>② 生徒画面</strong>出願スケジュールを登録して、期限と準備状況をまとめます。</div>
+ <div class="free-step"><strong>③ 先生画面</strong>先生用のデモIDでログインし、申し込みへの回答例を確認します。</div>
+ <div class="free-step"><strong>④ 管理者画面</strong>教員登録承認と大学情報の確認手順を説明します。</div>
+ <div class="free-step"><strong>⑤ 導入に向けた相談</strong>学校の情報管理・費用・管理責任者・試験運用の範囲を確認します。</div>
+ </div><p class="notice">役割を切り替えるにはログアウト後に別のデモIDでログインします。申し込みの反映は同じブラウザ内だけです。</p></div>
+ <div class="card"><h2 class="section-title">導入前に学校と合意する事項</h2><ul class="small-list">
+ <li>学校の正式な管理責任者と利用対象者</li><li>どの個人情報を保存するか、保存期間、削除方法</li><li>生徒・先生・管理者の権限と承認フロー</li><li>無料枠を超える場合の費用・停止条件</li><li>外部AIの年齢条件、同意、安全対策</li><li>卒業後の管理引継ぎと保守担当</li>
+ </ul><div class="privacy-note">本番の教員・生徒情報は入れないでください。公開GitHub Pagesは機密情報のやりとりに適しません。</div></div></div>
+ <div class="card"><h2 class="section-title">開発の段階と有料化の判断</h2>
+ <div class="free-steps"><div class="free-step"><strong>現在：無料・単一端末の試作</strong>画面、擬似承認、端末内の仮保存、書類のルールチェック。</div>
+ <div class="free-step"><strong>次：学校側が認める無料クラウドで試験</strong>架空アカウントだけで本物の認証・端末間のデータ共有を検証。無料枠の制限内で行います。</div>
+ <div class="free-step"><strong>正式導入後：必要な有料機能</strong>外部AI添削、学校のMicrosoft 365との正式連携、運用監視・バックアップなどを別途審査します。</div></div>
+ </div>
+</section>
 <section id="page-updates" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">大学情報の更新候補</h2><p class="notice">将来的には公式募集要項などの変更を自動検出します。現在は自動取得を行わず、仮の更新候補を手動登録して承認の流れを試します。</p><form id="updateForm" class="stack"><div class="field"><label for="updateUni">大学（仮称）</label><input id="updateUni" required maxlength="80" placeholder="例：サンプル大学"></div><div class="field"><label for="updateYear">対象年度</label><input id="updateYear" maxlength="10" value="2027" inputmode="numeric"></div><div class="field"><label for="updateInfo">変更内容（架空の例）</label><textarea id="updateInfo" required maxlength="420" placeholder="例：募集要項の新しい版が公開された（架空の情報）"></textarea></div><div class="field"><label for="updateUrl">出典URL（任意・デモは未検証）</label><input type="url" id="updateUrl" placeholder="https://example.org/..."></div><button class="button" type="submit">確認待ちの更新候補を追加</button></form></div><div class="card"><h2 class="section-title">公開用の更新一覧</h2><div id="publishedUpdates" class="stack"></div></div></div></section>
 <section id="page-feedback" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">改善要望・不具合報告</h2><p class="notice">匿名の体験用フォームです。外部へ送信されず、この端末内のデモ一覧にのみ記録されます。</p><form id="feedbackForm" class="stack"><div class="field"><label for="feedbackKind">種類</label><select id="feedbackKind"><option>機能の提案</option><option>操作の不具合</option><option>情報の誤り</option><option>その他</option></select></div><div class="field"><label for="feedbackText">内容</label><textarea id="feedbackText" required maxlength="500" placeholder="個人情報を書かずに、改善してほしい点をご記入ください。"></textarea></div><button class="button" type="submit">デモ報告を登録</button></form></div><div class="card"><h2 class="section-title">この端末の報告一覧</h2><div id="feedbackList" class="stack"></div></div></div></section>
 <p class="footer">進路コンパス — 企画段階の操作イメージです。学校・教職員の承認を得ていない非公式デモです。教員・大学情報は架空のサンプルです。</p>
@@ -204,7 +265,7 @@ let teachers=[
 {id:'G',name:'G先生（架空）',subject:'保健体育',fields:['sports','education'],keywords:['スポーツ','健康','運動','身体','体育','心理','チーム','教育'],description:'スポーツ指導、健康教育、チーム内コミュニケーションに関する相談の例。'},
 {id:'H',name:'H先生（架空）',subject:'芸術',fields:['arts','education'],keywords:['演劇','芸術','美術','音楽','表現','創作','ダンス','教育','舞台','俳優','声優'],description:'演劇や芸術表現、創作活動、作品制作を通じた学びについて相談する例。'}
 ];
-const pages={home:['あなたの学校の受験サポート','総合型選抜の書類・研究活動・進路相談を一つにまとめる。'],school:['学校向けの設定','校内の進路案内に合わせて、この画面をカスタマイズする。'],interview:['面接の想定質問','志望理由・活動・研究内容を伝える練習をする。'],recommend:['活動・調査をおすすめ','研究テーマと目的から、次に取り組むことを具体化します。'],match:['相談したい先生を探す','研究テーマに近い分野の先生を探し、面接練習を申し込む。'],documents:['出願書類をチェック','志望理由書・活動報告書などの下書きを見直す。'],research:['大学と学びを調べる','大学・教授・授業を公式情報から探す。'],activities:['志望につながる活動を考える','研究テーマからインタビュー・ボランティア・調査の方向性を考える。'],requests:['申し込み状況','この画面で作成したデモ申し込みを確認する。'],profile:['受験マイページ','志望校・出願期限・準備の進み具合を整理する。'],history:['添削履歴と比較','書類の版ごとの変化を振り返る。'],teacherportal:['先生用マイページ','自己登録・受付状況・申し込みへの回答を操作する。'],admin:['管理者ダッシュボード','教員登録・在籍状況・大学情報の承認を体験する。'],updates:['大学情報の更新管理','公式情報の確認と更新承認の仕組みを試す。'],feedback:['ご意見・不具合報告','改善の提案をデモとして記録する。']};
+const pages={home:['あなたの学校の受験サポート','総合型選抜の書類・研究活動・進路相談を一つにまとめる。'],school:['学校向けの設定','校内の進路案内に合わせて、この画面をカスタマイズする。'],interview:['面接の想定質問','志望理由・活動・研究内容を伝える練習をする。'],recommend:['活動・調査をおすすめ','研究テーマと目的から、次に取り組むことを具体化します。'],match:['相談したい先生を探す','研究テーマに近い分野の先生を探し、面接練習を申し込む。'],documents:['出願書類をチェック','志望理由書・活動報告書などの下書きを見直す。'],research:['大学と学びを調べる','大学・教授・授業を公式情報から探す。'],activities:['志望につながる活動を考える','研究テーマからインタビュー・ボランティア・調査の方向性を考える。'],requests:['申し込み状況','この画面で作成したデモ申し込みを確認する。'],profile:['受験マイページ','志望校・出願期限・準備の進み具合を整理する。'],applications:['出願スケジュール','出願予定と準備状況を架空の情報で整理する。'],pitch:['学校への導入提案','プレゼンの実演手順と導入前の確認項目。'],history:['添削履歴と比較','書類の版ごとの変化を振り返る。'],teacherportal:['先生用マイページ','自己登録・受付状況・申し込みへの回答を操作する。'],admin:['管理者ダッシュボード','教員登録・在籍状況・大学情報の承認を体験する。'],updates:['大学情報の更新管理','公式情報の確認と更新承認の仕組みを試す。'],feedback:['ご意見・不具合報告','改善の提案をデモとして記録する。']};
 const $=id=>document.getElementById(id);let requests=[];let chosen=null;let currentMatches=[];
 const DEMO_KEY='compass_v4_demo_only';
 let demoLoaded={};try{demoLoaded=JSON.parse(localStorage.getItem(DEMO_KEY)||'{}')||{}}catch(e){}
@@ -213,6 +274,7 @@ else teachers=teachers.map(t=>({...t,approved:true,active:true,status:'open',lim
 requests=Array.isArray(demoLoaded.requests)?demoLoaded.requests:[];
 let studentProfile=demoLoaded.studentProfile||{nickname:'生徒A（架空）',university:'',method:'総合型選抜',topic:'',deadline:''};
 let todoItems=Array.isArray(demoLoaded.todoItems)?demoLoaded.todoItems:[{id:'seedtask',text:'募集要項を公式サイトで確認する',done:false}];
+let applicationPlans=Array.isArray(demoLoaded.applicationPlans)?demoLoaded.applicationPlans:[];
 let reviewHistory=Array.isArray(demoLoaded.reviewHistory)?demoLoaded.reviewHistory:[];
 let feedbackItems=Array.isArray(demoLoaded.feedbackItems)?demoLoaded.feedbackItems:[];
 let universityDrafts=Array.isArray(demoLoaded.universityDrafts)?demoLoaded.universityDrafts:[];
@@ -223,7 +285,7 @@ function stampNow(){return new Date().toLocaleString('ja-JP')}
 function newId(){return 'd'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 function pendingCount(id){return requests.filter(r=>r.teacherId===id && ['pending','scheduling','approved'].includes(r.status)).length}
 function eligible(t){return t.active!==false&&t.approved!==false&&t.status==='open'&&pendingCount(t.id)<Number(t.limit||3)}
-function persistDemo(){try{localStorage.setItem(DEMO_KEY,JSON.stringify({teachers,requests,studentProfile,todoItems,reviewHistory,feedbackItems,universityDrafts,adminLog:adminLog.slice(0,40)}));$('saveStatus').textContent='この端末にデモ保存中'}catch(e){$('saveStatus').textContent='デモ保存不可：この画面を閉じると消える場合があります'}$('requestBadge').textContent=requests.length?'('+requests.length+')':''}
+function persistDemo(){try{localStorage.setItem(DEMO_KEY,JSON.stringify({teachers,requests,studentProfile,todoItems,applicationPlans,reviewHistory,feedbackItems,universityDrafts,adminLog:adminLog.slice(0,40)}));$('saveStatus').textContent='この端末にデモ保存中'}catch(e){$('saveStatus').textContent='デモ保存不可：この画面を閉じると消える場合があります'}$('requestBadge').textContent=requests.length?'('+requests.length+')':''}
 function audit(msg){adminLog.unshift({id:newId(),time:stampNow(),msg});adminLog=adminLog.slice(0,40);persistDemo()}
 
 // Ver.5 デモ用ログイン。公開HTMLに資格情報が含まれ、本物の認証・権限管理ではありません。
@@ -233,9 +295,9 @@ const DEMO_USERS={
   'admin-demo':{password:'admin123',role:'admin',name:'管理者デモ'}
 };
 const ROLE_PAGES={
-  student:['home','match','recommend','documents','research','activities','requests','interview','profile','history','feedback'],
+  student:['home','match','recommend','documents','research','activities','requests','interview','profile','applications','history','feedback'],
   teacher:['teacherportal','feedback'],
-  admin:['admin','updates','school','feedback']
+  admin:['admin','pitch','updates','school','feedback']
 };
 const ROLE_NAMES={student:'生徒',teacher:'先生',admin:'管理者'};
 const ROLE_START={student:'home',teacher:'teacherportal',admin:'admin'};
@@ -298,7 +360,7 @@ function showPage(p,fromHistory=false){
  Object.keys(pages).forEach(k=>$('page-'+k).classList.toggle('hidden',k!==p));
  document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));
  $('pageTitle').textContent=pages[p][0];$('pageSubtitle').textContent=pages[p][1];
- if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();
+ if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='applications')renderApplications();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();
  closeMobileMenu();updateNavButtons();window.scrollTo({top:0,behavior:'instant'});
 }
 document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
@@ -432,6 +494,36 @@ $('makeQuestions').addEventListener('click',()=>{
  $('copyQuestions').addEventListener('click',()=>copyText(chosen.map((q,i)=>(i+1)+'. '+q).join('\n'),'想定質問をコピーしました。'));
 });
 
+
+// Ver.6.0: ブラウザ内だけの架空の出願スケジュール。外部送信はしない。
+const APPLICATION_STAGE={notstarted:'未着手',working:'準備中',review:'先生に確認を依頼中（デモ）',ready:'提出準備完了'};
+function renderApplications(){
+  const sorted=applicationPlans.slice().sort((a,b)=>a.due.localeCompare(b.due));
+  const ready=applicationPlans.filter(a=>a.stage==='ready').length;
+  const today=new Date();today.setHours(0,0,0,0);
+  const soon=applicationPlans.filter(a=>{const d=new Date(a.due+'T00:00:00');return d>=today&&d.getTime()-today.getTime()<=14*86400000}).length;
+  $('applicationStats').innerHTML=`<div class="free-metric"><strong>${applicationPlans.length}</strong><small>デモ出願予定</small></div><div class="free-metric"><strong>${ready}</strong><small>提出準備完了</small></div><div class="free-metric"><strong>${soon}</strong><small>14日以内の締切（入力値）</small></div>`;
+  const list=$('applicationList');
+  if(!sorted.length){list.innerHTML='<div class="empty">まだ登録がありません。架空の出願予定を追加してください。</div>';return;}
+  list.innerHTML=sorted.map(a=>`<div class="free-application"><div class="row wrapsmall"><strong>${htmlEscape(a.uni)}</strong><span class="free-status ${a.stage==='ready'?'complete':''}">${htmlEscape(APPLICATION_STAGE[a.stage]||'未着手')}</span></div><p>${htmlEscape(a.method)}／出願締切（仮）：${htmlEscape(a.due)}</p><p>必要書類（仮）：${htmlEscape(a.doc)}</p><div class="field"><label for="stage-${a.id}">準備状況を更新</label><select id="stage-${a.id}" data-application-stage="${a.id}"><option value="notstarted" ${a.stage==='notstarted'?'selected':''}>未着手</option><option value="working" ${a.stage==='working'?'selected':''}>準備中</option><option value="review" ${a.stage==='review'?'selected':''}>先生に確認を依頼中（デモ）</option><option value="ready" ${a.stage==='ready'?'selected':''}>提出準備完了</option></select></div><div class="toolbar"><button class="button ghost" data-application-remove="${a.id}" type="button">この予定を削除</button></div></div>`).join('');
+  list.querySelectorAll('[data-application-stage]').forEach(sel=>sel.addEventListener('change',()=>{const a=applicationPlans.find(x=>x.id===sel.dataset.applicationStage);if(a){a.stage=sel.value;persistDemo();renderApplications()}}));
+  list.querySelectorAll('[data-application-remove]').forEach(btn=>btn.addEventListener('click',()=>{applicationPlans=applicationPlans.filter(x=>x.id!==btn.dataset.applicationRemove);persistDemo();renderApplications()}));
+}
+$('applicationForm').addEventListener('submit',e=>{
+ e.preventDefault();if(sessionAccount?.role!=='student')return;
+ const uni=$('appUni').value.trim(),method=$('appMethod').value,due=$('appDue').value,doc=$('appDoc').value.trim(),stage=$('appStage').value;
+ if(!uni||!/^\d{4}-\d{2}-\d{2}$/.test(due)||!doc||applicationPlans.length>=30){alert('入力内容を確認してください。デモの上限は30件です。');return}
+ applicationPlans.push({id:newId(),uni,method,due,doc,stage});persistDemo();$('applicationForm').reset();renderApplications();
+});
+$('loadApplicationSamples').addEventListener('click',()=>{
+ if(sessionAccount?.role!=='student')return;
+ const base=new Date(),day=86400000;
+ if(applicationPlans.length>=28){alert('デモの上限に近づいているため追加できません。');return}
+ const samples=[{uni:'サンプル未来大学・人間科学部',method:'総合型選抜',doc:'志望理由書・活動報告書',offset:28,stage:'working'},{uni:'架空創造学院大学・社会学部',method:'学校推薦型選抜',doc:'自己推薦書・調査書',offset:52,stage:'notstarted'}];
+ samples.forEach(x=>{const d=new Date(base.getTime()+x.offset*day),due=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');applicationPlans.push({id:newId(),uni:x.uni,method:x.method,doc:x.doc,due,stage:x.stage})});
+ persistDemo();renderApplications();
+});
+
 // Ver.5: 役割はログインIDに紐づけて表示します（ブラウザ内の操作デモ）。
 function safeVal(id){return $(id).value.trim()}
 function renderProfile(){
@@ -480,7 +572,7 @@ function renderUpdates(){ $('publishedUpdates').innerHTML=universityDrafts.filte
 $('updateForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='admin')return;let url=safeVal('updateUrl');if(url&&!/^https:\/\//i.test(url)){alert('URLはhttps://から始めてください。');return}universityDrafts.unshift({id:newId(),university:safeVal('updateUni'),year:safeVal('updateYear')||'未記入',info:safeVal('updateInfo'),url,status:'pending',addedAt:stampNow()});$('updateInfo').value='';$('updateUrl').value='';audit('大学情報の更新候補を手動で追加');renderUpdates();alert('デモ更新候補を管理者の確認待ちにしました。')});
 function renderFeedback(){$('feedbackList').innerHTML=feedbackItems.length?feedbackItems.slice().reverse().map(x=>`<div class="compact-card"><strong>${htmlEscape(x.kind)}</strong><p>${htmlEscape(x.text)}</p></div>`).join(''):'<div class="empty">まだ報告はありません。</div>'}
 $('feedbackForm').addEventListener('submit',e=>{e.preventDefault();const text=safeVal('feedbackText');if(!text)return;feedbackItems.push({id:newId(),kind:safeVal('feedbackKind'),text});$('feedbackText').value='';persistDemo();renderFeedback();alert('このブラウザ内のデモに登録しました。学校には送信されていません。')});
-$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'5',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
+$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'6.0-free',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,applicationPlans,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
 $('resetDemo').addEventListener('click',()=>{if(!confirm('この端末に保存したVer.5のデモデータをすべて初期化しますか？'))return;try{localStorage.removeItem(DEMO_KEY)}catch(e){}location.reload()});
 persistDemo();
 
