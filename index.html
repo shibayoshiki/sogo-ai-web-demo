@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>進路コンパス Ver.5 | 校内総合型選抜支援デモ</title>
+<title>進路コンパス Ver.5.1 | 校内総合型選抜支援デモ</title>
 <meta name="theme-color" content="#12213a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="進路コンパス"><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="志望理由書・活動報告書のチェック、研究活動の提案、大学の情報収集、先生マッチングをまとめた学校向け試作ツール">
 <style>
 :root{--bg:#f6f8fc;--ink:#15233b;--muted:#64748b;--line:#e1e7f0;--primary:#2867dc;--primary2:#1d4fb8;--soft:#eaf1ff;--white:#fff;--radius:16px;--shadow:0 10px 32px #142d5010}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.58}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9bc0ff;outline-offset:2px}a{color:var(--primary)}.layout{min-height:100vh;display:grid;grid-template-columns:248px 1fr}.sidebar{background:#12213a;color:#e8eef9;padding:28px 18px;display:flex;flex-direction:column;gap:22px}.brand{padding:0 12px}.brand .mark{background:#65a0ff;color:#092347;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;font-weight:800;font-size:22px;margin-bottom:10px}.brand b{display:block;font-size:20px;letter-spacing:.05em}.brand small{display:block;color:#adbdd7;margin-top:3px}.menu{display:grid;gap:5px}.navbtn{color:#b9c8de;border:0;border-radius:11px;background:transparent;text-align:left;padding:11px 13px;font-size:14px}.navbtn:hover,.navbtn.active{background:#263956;color:white}.navbtn .ico{display:inline-block;width:27px}.side-note{margin-top:auto;background:#233451;border:1px solid #384b68;padding:14px;border-radius:13px;font-size:12px;color:#ccdaef}.main{padding:32px clamp(16px,4vw,52px) 70px;max-width:1320px;width:100%;margin:auto}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--primary);text-transform:uppercase}.heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:5px 0 22px}.heading h1{font-size:clamp(23px,2.8vw,32px);letter-spacing:-.02em;margin:0}.heading p{color:var(--muted);margin:7px 0 0;font-size:14px}.pill{display:inline-flex;align-items:center;background:#edf2fa;color:#52647f;padding:5px 10px;font-size:11px;font-weight:700;border-radius:100px;white-space:nowrap}.pill.blue{background:#e6f0ff;color:#2860c2}.alert{background:#fffae9;border:1px solid #f1dda1;color:#66521f;border-radius:13px;padding:12px 15px;font-size:12px;margin-bottom:20px}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:21px}.section-title{font-size:17px;margin:0 0 13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.stack{display:grid;gap:17px}.search-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:16px}.field{display:grid;gap:6px;font-size:13px;font-weight:650}.field label{font-weight:650}.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #cdd7e5;border-radius:10px;padding:11px 12px;outline:none;color:var(--ink);font-size:14px}.field textarea{min-height:120px;resize:vertical}.hint{font-size:11px;font-weight:400;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}.chip{border:1px solid #d5dfea;background:#f7f9fe;padding:6px 10px;border-radius:100px;font-size:12px;color:#536780}.button{border:none;background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;white-space:nowrap}.button:hover{background:var(--primary2)}.button.secondary{background:#ebf2ff;color:#255ab8}.button.ghost{background:#f2f5f9;color:#344762}.button:disabled{opacity:.5;cursor:not-allowed}.teacher-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.teacher{padding:19px;display:flex;flex-direction:column;gap:12px}.teacher .avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:#edf3ff;color:#215acc;font-weight:800}.teacher h3{margin:0;font-size:17px}.teacher .meta{font-size:12px;color:var(--muted)}.teacher .desc{font-size:13px;color:#40516a;margin:0;min-height:42px}.teacher .why{background:#f3f7fd;border-left:3px solid #83acf3;color:#465a7a;font-size:12px;padding:9px 10px;border-radius:0 7px 7px 0}.teacher .last{margin-top:auto}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.num{font-size:12px;color:var(--muted)}.result-list{padding-left:20px;margin:8px 0 0;color:#3b4c63;font-size:14px}.result-list li{margin:8px 0}.well{background:#f4f7fc;border-radius:11px;padding:16px;font-size:13px}.notice{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{background:#f1f5fb;color:#526781;border:0;border-radius:9px;padding:8px 12px;font-size:12px}.tab.selected{background:#dceafa;color:#1b56b5;font-weight:700}.hidden{display:none!important}.empty{text-align:center;padding:46px 10px;color:var(--muted);font-size:13px}.report{background:#f6f9ff;border:1px solid #dfebfc;border-radius:12px;padding:16px;font-size:13px}.report b{font-size:14px}.report p{margin:7px 0}.request{background:#f7f9fc;border:1px solid #e0e7f0;border-radius:12px;padding:14px;font-size:13px}.request p{margin:4px 0;color:#64748b}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#eef4fe;border-radius:9px;padding:10px 12px;font-size:13px;color:#315b94}.stat strong{font-size:19px;margin-right:3px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fff}.feature strong{display:block;margin-bottom:7px}.feature p{font-size:12px;color:var(--muted);margin:0}.modal-bg{position:fixed;inset:0;background:#10233d9e;display:flex;align-items:center;justify-content:center;padding:16px;z-index:5}.modal{background:#fff;width:min(540px,100%);max-height:90vh;overflow:auto;border-radius:17px;padding:24px;box-shadow:0 30px 90px #0c1c3970}.modal h2{margin:0;font-size:21px}.modal .sub{font-size:12px;color:var(--muted);margin:4px 0 18px}.modal form{display:grid;gap:13px}.footer{margin:30px 0 0;font-size:12px;color:#8a96aa;text-align:center}@media(max-width:980px){.layout{display:block}.sidebar{padding:14px 18px 12px;gap:10px}.brand{display:flex;align-items:center;gap:11px}.brand .mark{margin:0;width:33px;height:33px;font-size:17px}.brand b{font-size:16px}.brand small{font-size:11px}.menu{display:flex;gap:6px;overflow-x:auto;padding-bottom:3px}.navbtn{white-space:nowrap;padding:9px 11px}.side-note{display:none}.main{padding:22px 16px 45px}}@media(max-width:700px){.search-grid,.teacher-grid,.split,.three{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.teacher .desc{min-height:0}.card{padding:17px}.teacher{padding:17px}}
@@ -28,6 +28,43 @@
 @media(max-width:980px){
 .layout{display:block}.mobile-topbar{display:flex;align-items:center;gap:11px;height:58px;position:sticky;top:0;left:0;right:0;z-index:20;background:#12213a;color:white;padding:7px 15px;box-shadow:0 4px 20px #10213f25}.hamburger{width:40px;height:40px;background:#263e60;border:1px solid #50617b;color:white;font-size:24px;border-radius:10px;line-height:1}.mobile-heading{display:flex;flex-direction:column;flex:1;min-width:0}.mobile-heading b{font-size:15px}.mobile-heading small{color:#bdcce4;font-size:10px}.topbar-logout{border:1px solid #53627c;border-radius:9px;background:#253a57;color:white;padding:8px 10px;font-size:11px}.sidebar{position:fixed;top:0;left:0;bottom:0;width:min(310px,86vw);max-height:100dvh;overflow-y:auto;z-index:40;transform:translateX(-105%);transition:transform .2s ease;box-shadow:16px 0 40px #0b1b3850;padding:20px 16px}.sidebar.is-open{transform:translateX(0)}.menu{display:grid;overflow:visible;gap:5px}.navbtn{white-space:normal;font-size:14px}.side-note{display:block}.nav-shade{position:fixed;inset:0;background:#07182e9c;z-index:30}.main{padding:20px 14px 104px}.app-bottom-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:19;background:#fff;border-top:1px solid #dde4ef;padding:5px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));box-shadow:0 -8px 22px #1b35500c}.app-bottom-nav.hidden{display:none}.app-bottom-nav button{flex:1;display:grid;justify-items:center;gap:1px;border:0;background:transparent;color:#244b89;padding:5px 9px;border-radius:9px;min-height:45px}.app-bottom-nav button span{font-size:25px;line-height:1}.app-bottom-nav button small{font-size:11px}.app-bottom-nav button:disabled{color:#b1bccb;opacity:.65}.app-bottom-nav button:active:not(:disabled){background:#e9f1ff}
 }
+
+/* Ver.5.1: 横向きのiPadを含む幅広い画面で、アプリ内の戻る／進む／ホームを表示する。
+   980px以下は既存のモバイル配置を維持する。 */
+@media (min-width: 981px) {
+  .app-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 248px; /* 常時表示されるサイドバーの幅 */
+    right: 0;
+    z-index: 19;
+    background: #fff;
+    border-top: 1px solid #dde4ef;
+    padding: 5px max(12px, env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+    box-shadow: 0 -8px 22px #1b35500c;
+  }
+  .app-bottom-nav button {
+    flex: 1;
+    display: grid;
+    justify-items: center;
+    gap: 1px;
+    border: 0;
+    background: transparent;
+    color: #244b89;
+    padding: 5px 9px;
+    border-radius: 9px;
+    min-height: 45px;
+    cursor: pointer;
+  }
+  .app-bottom-nav button span { font-size: 25px; line-height: 1; }
+  .app-bottom-nav button small { font-size: 11px; }
+  .app-bottom-nav button:disabled { color: #b1bccb; opacity: .65; cursor: default; }
+  .app-bottom-nav button:active:not(:disabled) { background: #e9f1ff; }
+  .main { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+}
+/* 通知や申込フォームが開いている間はナビゲーションバーより前面に表示する。 */
+.modal-bg { z-index: 60; }
 </style>
 </head>
 <body>
@@ -73,14 +110,14 @@
 <button class="navbtn" data-page="school"><span class="ico">⚙</span>学校向けの設定</button>
 </nav><div class="session-sidebar"><span id="sidebarRoleLabel">デモアカウント</span><button class="sidebar-logout" id="logoutDesktop" type="button">ログアウト</button></div><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。外部送信・AI API接続・校内認証は未実装です。</div>
 </aside>
-<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.5 デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
+<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.5.1 デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
 <div class="nav-shade hidden" id="navShade"></div>
 <main class="main">
 <div class="eyebrow">Student admissions support</div>
-<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 5.0 / 非公式デモ</span></div>
-<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.5操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
+<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 5.1 / 非公式デモ</span></div>
+<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.5.1操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
 <section id="page-home" class="stack">
-<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.5を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
+<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.5.1を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
 <div class="card" data-admin-only><div class="row wrapsmall"><div><div class="schoollabel">カスタマイズ対象</div><h2 id="homeSchoolName" style="font-size:19px;margin:0">学校名は未設定です</h2><p class="notice" id="homeGuidance">「学校向けの設定」から校内の進路相談窓口などを登録できます。</p></div><button class="button secondary" data-go="school">学校向けの設定</button></div></div>
 <div><h2 class="section-title">できること</h2><div class="feature-grid">
 <button class="feature-action" data-go="documents"><span class="ficon">▤</span><strong>書類チェック</strong><p>志望理由書・活動報告書・自己推薦書・自己PR文の構成と表現を分析します。</p><span class="microtag">AI未接続・ルールチェック</span></button>
