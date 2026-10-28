@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>進路コンパス Ver.6.0 無料試作 | 校内総合型選抜支援デモ</title>
+<title>進路コンパス Ver.6.2 無料試作 | 校内総合型選抜支援デモ</title>
 <meta name="theme-color" content="#12213a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="進路コンパス"><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="志望理由書・活動報告書のチェック、研究活動の提案、大学の情報収集、先生マッチングをまとめた学校向け試作ツール">
 <style>
 :root{--bg:#f6f8fc;--ink:#15233b;--muted:#64748b;--line:#e1e7f0;--primary:#2867dc;--primary2:#1d4fb8;--soft:#eaf1ff;--white:#fff;--radius:16px;--shadow:0 10px 32px #142d5010}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.58}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9bc0ff;outline-offset:2px}a{color:var(--primary)}.layout{min-height:100vh;display:grid;grid-template-columns:248px 1fr}.sidebar{background:#12213a;color:#e8eef9;padding:28px 18px;display:flex;flex-direction:column;gap:22px}.brand{padding:0 12px}.brand .mark{background:#65a0ff;color:#092347;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;font-weight:800;font-size:22px;margin-bottom:10px}.brand b{display:block;font-size:20px;letter-spacing:.05em}.brand small{display:block;color:#adbdd7;margin-top:3px}.menu{display:grid;gap:5px}.navbtn{color:#b9c8de;border:0;border-radius:11px;background:transparent;text-align:left;padding:11px 13px;font-size:14px}.navbtn:hover,.navbtn.active{background:#263956;color:white}.navbtn .ico{display:inline-block;width:27px}.side-note{margin-top:auto;background:#233451;border:1px solid #384b68;padding:14px;border-radius:13px;font-size:12px;color:#ccdaef}.main{padding:32px clamp(16px,4vw,52px) 70px;max-width:1320px;width:100%;margin:auto}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--primary);text-transform:uppercase}.heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:5px 0 22px}.heading h1{font-size:clamp(23px,2.8vw,32px);letter-spacing:-.02em;margin:0}.heading p{color:var(--muted);margin:7px 0 0;font-size:14px}.pill{display:inline-flex;align-items:center;background:#edf2fa;color:#52647f;padding:5px 10px;font-size:11px;font-weight:700;border-radius:100px;white-space:nowrap}.pill.blue{background:#e6f0ff;color:#2860c2}.alert{background:#fffae9;border:1px solid #f1dda1;color:#66521f;border-radius:13px;padding:12px 15px;font-size:12px;margin-bottom:20px}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:21px}.section-title{font-size:17px;margin:0 0 13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.stack{display:grid;gap:17px}.search-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:16px}.field{display:grid;gap:6px;font-size:13px;font-weight:650}.field label{font-weight:650}.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #cdd7e5;border-radius:10px;padding:11px 12px;outline:none;color:var(--ink);font-size:14px}.field textarea{min-height:120px;resize:vertical}.hint{font-size:11px;font-weight:400;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}.chip{border:1px solid #d5dfea;background:#f7f9fe;padding:6px 10px;border-radius:100px;font-size:12px;color:#536780}.button{border:none;background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;white-space:nowrap}.button:hover{background:var(--primary2)}.button.secondary{background:#ebf2ff;color:#255ab8}.button.ghost{background:#f2f5f9;color:#344762}.button:disabled{opacity:.5;cursor:not-allowed}.teacher-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.teacher{padding:19px;display:flex;flex-direction:column;gap:12px}.teacher .avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:#edf3ff;color:#215acc;font-weight:800}.teacher h3{margin:0;font-size:17px}.teacher .meta{font-size:12px;color:var(--muted)}.teacher .desc{font-size:13px;color:#40516a;margin:0;min-height:42px}.teacher .why{background:#f3f7fd;border-left:3px solid #83acf3;color:#465a7a;font-size:12px;padding:9px 10px;border-radius:0 7px 7px 0}.teacher .last{margin-top:auto}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.num{font-size:12px;color:var(--muted)}.result-list{padding-left:20px;margin:8px 0 0;color:#3b4c63;font-size:14px}.result-list li{margin:8px 0}.well{background:#f4f7fc;border-radius:11px;padding:16px;font-size:13px}.notice{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{background:#f1f5fb;color:#526781;border:0;border-radius:9px;padding:8px 12px;font-size:12px}.tab.selected{background:#dceafa;color:#1b56b5;font-weight:700}.hidden{display:none!important}.empty{text-align:center;padding:46px 10px;color:var(--muted);font-size:13px}.report{background:#f6f9ff;border:1px solid #dfebfc;border-radius:12px;padding:16px;font-size:13px}.report b{font-size:14px}.report p{margin:7px 0}.request{background:#f7f9fc;border:1px solid #e0e7f0;border-radius:12px;padding:14px;font-size:13px}.request p{margin:4px 0;color:#64748b}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#eef4fe;border-radius:9px;padding:10px 12px;font-size:13px;color:#315b94}.stat strong{font-size:19px;margin-right:3px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fff}.feature strong{display:block;margin-bottom:7px}.feature p{font-size:12px;color:var(--muted);margin:0}.modal-bg{position:fixed;inset:0;background:#10233d9e;display:flex;align-items:center;justify-content:center;padding:16px;z-index:5}.modal{background:#fff;width:min(540px,100%);max-height:90vh;overflow:auto;border-radius:17px;padding:24px;box-shadow:0 30px 90px #0c1c3970}.modal h2{margin:0;font-size:21px}.modal .sub{font-size:12px;color:var(--muted);margin:4px 0 18px}.modal form{display:grid;gap:13px}.footer{margin:30px 0 0;font-size:12px;color:#8a96aa;text-align:center}@media(max-width:980px){.layout{display:block}.sidebar{padding:14px 18px 12px;gap:10px}.brand{display:flex;align-items:center;gap:11px}.brand .mark{margin:0;width:33px;height:33px;font-size:17px}.brand b{font-size:16px}.brand small{font-size:11px}.menu{display:flex;gap:6px;overflow-x:auto;padding-bottom:3px}.navbtn{white-space:nowrap;padding:9px 11px}.side-note{display:none}.main{padding:22px 16px 45px}}@media(max-width:700px){.search-grid,.teacher-grid,.split,.three{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.teacher .desc{min-height:0}.card{padding:17px}.teacher{padding:17px}}
@@ -66,7 +66,7 @@
 /* 通知や申込フォームが開いている間はナビゲーションバーより前面に表示する。 */
 .modal-bg { z-index: 60; }
 
-/* Ver.6.0 Free Preview: 出願スケジュール・学校向けデモ案内。データは端末内のみ。 */
+/* Ver.6.2 Free Preview: 出願スケジュール・学校向けデモ案内。データは端末内のみ。 */
 .free-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .free-metric{border:1px solid #d9e5f5;background:#f6f9fe;border-radius:12px;padding:15px}
 .free-metric strong{display:block;font-size:24px;color:#2356a0}
@@ -82,13 +82,40 @@
 .free-step strong{display:block;margin-bottom:4px}
 .free-steps{display:grid;gap:10px}
 @media(max-width:760px){.free-grid{grid-template-columns:1fr}}
+
+/* Ver.6.2 文献検索：既存画面とは独立した検索UI */
+.bib-layout{display:grid;grid-template-columns:1fr 1fr;gap:15px;align-items:start}
+.bib-results{display:grid;gap:12px}
+.bib-record{border:1px solid #dbe5f1;background:#fff;border-radius:13px;padding:16px;overflow-wrap:anywhere}
+.bib-record h3{font-size:15px;line-height:1.55;margin:7px 0}
+.bib-record .bib-meta{font-size:12px;color:#61738d;line-height:1.7;margin:6px 0}
+.bib-record .bib-source{display:inline-flex;padding:3px 9px;background:#edf3fe;border-radius:999px;color:#24559a;font-weight:700;font-size:11px}
+.bib-record .toolbar{margin-top:10px}
+.bib-record .button{white-space:normal;text-align:center}
+.bib-help{font-size:12px;color:#566982;line-height:1.8}
+.bib-status{background:#f0f6ff;border:1px solid #d6e5fc;color:#31517e;padding:12px 14px;border-radius:10px;font-size:12px}
+.bib-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.bib-links a{display:inline-block;padding:8px 11px;border-radius:9px;background:#f1f5fc;border:1px solid #dce5ef;font-size:12px;text-decoration:none}
+@media(max-width:800px){.bib-layout{grid-template-columns:1fr}}
+/* Ver.6.2: 連動デモ */
+.linked-dashboard{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:14px}
+.linked-item{border:1px solid #dde7f2;background:#f9fbff;padding:12px 14px;border-radius:11px;font-size:13px}
+.linked-item small{color:#5d718d;display:block;margin-top:4px}
+.linked-comparison{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px}
+.linked-comparison .card{overflow-wrap:anywhere}
+.linked-form{display:grid;gap:10px;background:#f7faff;border-radius:11px;padding:13px;margin-top:10px}
+.linked-mini{font-size:12px;color:#5b6f89;line-height:1.7}
+.linked-good{background:#eef8f2;color:#1e6546;padding:4px 8px;border-radius:100px;font-size:11px}
+.linked-warning{background:#fff5e7;color:#855a17;padding:4px 8px;border-radius:100px;font-size:11px}
+.linked-note{min-height:82px!important}
+@media(max-width:830px){.linked-dashboard{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <div id="loginScreen" class="login-screen">
   <div class="login-panel">
-    <div class="login-brand"><span class="login-mark">進</span><div><strong>進路コンパス</strong><span>総合型選抜サポート・Ver.6.0</span></div></div>
+    <div class="login-brand"><span class="login-mark">進</span><div><strong>進路コンパス</strong><span>総合型選抜サポート・Ver.6.2</span></div></div>
     <span class="login-tag">校内向けアカウント設計デモ</span>
     <h1>ログイン</h1>
     <p class="login-intro">生徒・先生・管理者の画面を、アカウントごとに確認できます。</p>
@@ -115,7 +142,10 @@
 <button class="navbtn" data-page="recommend"><span class="ico">✦</span>活動・調査の推薦</button>
 <button class="navbtn" data-page="documents"><span class="ico">▤</span>書類チェック</button>
 <button class="navbtn" data-page="research"><span class="ico">⌕</span>大学・教授調査</button>
+<button class="navbtn" data-page="bibliography"><span class="ico">▧</span>本・論文を探す</button>
 <button class="navbtn" data-page="activities"><span class="ico">◇</span>活動アイデア</button>
+<button class="navbtn" data-page="journal"><span class="ico">✎</span>活動・経験ノート</button>
+<button class="navbtn" data-page="compare"><span class="ico">▥</span>志望大学を比較</button>
 <button class="navbtn" data-page="requests"><span class="ico">◷</span>申し込み一覧 <span id="requestBadge"></span></button>
 <button class="navbtn" data-page="interview"><span class="ico">☷</span>面接の想定質問</button>
 <button class="navbtn" data-page="profile"><span class="ico">▣</span>受験マイページ</button>
@@ -127,23 +157,29 @@
 <button class="navbtn" data-page="updates"><span class="ico">↻</span>大学情報の更新</button>
 <button class="navbtn" data-page="feedback"><span class="ico">✉</span>ご意見・改善</button>
 <button class="navbtn" data-page="school"><span class="ico">⚙</span>学校向けの設定</button>
-</nav><div class="session-sidebar"><span id="sidebarRoleLabel">デモアカウント</span><button class="sidebar-logout" id="logoutDesktop" type="button">ログアウト</button></div><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。外部送信・AI API接続・校内認証は未実装です。</div>
+</nav><div class="session-sidebar"><span id="sidebarRoleLabel">デモアカウント</span><button class="sidebar-logout" id="logoutDesktop" type="button">ログアウト</button></div><div class="side-note"><strong>この画面はデモです。</strong><br>先生はすべて架空です。推薦や文章チェックは端末上のプログラムで動作し、生成AIではありません。文献検索だけは検索語を外部書誌サービスに送信します。生成AI接続・校内認証は未実装です。</div>
 </aside>
-<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.6.0 無料デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
+<header class="mobile-topbar" id="mobileTopbar"><button type="button" class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">☰</button><div class="mobile-heading"><b>進路コンパス</b><small id="mobileRoleLabel">Ver.6.2 無料デモ</small></div><button class="topbar-logout" type="button" id="logoutMobile">ログアウト</button></header>
 <div class="nav-shade hidden" id="navShade"></div>
 <main class="main">
 <div class="eyebrow">Student admissions support</div>
-<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 6.0 / 無料試作</span></div>
-<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.6.0操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。公開ページには実際の生徒・教員情報を入力しないでください。</div>
+<div class="heading"><div><h1 id="pageTitle">あなたの学校の受験サポート</h1><p id="pageSubtitle">総合型選抜の書類・研究活動・進路相談を一つにまとめる。</p></div><span class="pill">Ver. 6.2 / 無料試作</span></div>
+<div class="session-status" aria-label="ログイン状態"><span id="loginIndicator">ログイン情報を読み込み中</span><span id="saveStatus">デモ保存状態を確認中</span></div><div class="alert"><strong>Ver.6.2操作デモ：</strong>3種類の架空アカウントで画面を試せます。ID・パスワードは実際の認証ではなく、役割の制限も画面上の再現です。生成AI接続、大学情報の自動収集、複数端末での同期、実際の通知は未実装です。文献検索時は検索語だけを外部の書誌データサービスへ送ります。公開ページには実際の生徒・教員情報を入力しないでください。</div>
 <section id="page-home" class="stack">
-<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.6.0を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
+<div class="linked-dashboard" id="linkedDashboard">
+ <div class="card"><div class="row wrapsmall"><h2 class="section-title" style="margin:0">今日やること・締切のお知らせ</h2><span class="pill blue">受験情報から自動整理</span></div>
+ <div id="linkedToday" class="stack" aria-live="polite" style="margin-top:14px"></div><p class="notice">表示はデモ用の本人入力情報に基づきます。通知はアプリを開いたときに表示され、端末へのプッシュ通知はまだありません。</p></div>
+ <div class="card"><h2 class="section-title">すぐに取りかかる</h2><div class="toolbar"><button class="button secondary" data-go="applications">出願・書類</button><button class="button secondary" data-go="journal">活動を記録</button><button class="button secondary" data-go="bibliography">本・論文を探す</button><button class="button secondary" data-go="compare">大学を比較</button><button class="button secondary" data-go="requests">面接の振り返り</button></div></div>
+</div>
+<div class="hero"><div><span class="pill">校内の実情に合わせて育てる</span><h2>校内の受験準備を支える、<br>総合型選抜サポート。</h2><p>大学を調べる、書類を見直す、行動を考える、先生に相談する。<br>今は無料で動く試作品。学校の正式な導入・AI接続はこれからです。</p><div class="hero-actions"><button class="button" data-go="documents">書類をチェックする</button><button class="button alt" data-go="recommend">活動の推薦を見る</button></div></div><div class="hero-meter"><small>現在の開発状況</small><strong>Ver.6.2を操作</strong><small>試作版として操作可能</small><div class="metric-row"><div class="metric">書類<br>構成確認</div><div class="metric">校内<br>仮データ</div><div class="metric">活動<br>計画提案</div></div></div></div>
 <div class="card" data-admin-only><div class="row wrapsmall"><div><div class="schoollabel">カスタマイズ対象</div><h2 id="homeSchoolName" style="font-size:19px;margin:0">学校名は未設定です</h2><p class="notice" id="homeGuidance">「学校向けの設定」から校内の進路相談窓口などを登録できます。</p></div><button class="button secondary" data-go="school">学校向けの設定</button></div></div>
 <div><h2 class="section-title">できること</h2><div class="feature-grid">
 <button class="feature-action" data-go="documents"><span class="ficon">▤</span><strong>書類チェック</strong><p>志望理由書・活動報告書・自己推薦書・自己PR文の構成と表現を分析します。</p><span class="microtag">AI未接続・ルールチェック</span></button>
 <button class="feature-action" data-go="research"><span class="ficon">⌕</span><strong>大学・教授・授業の調査</strong><p>大学の募集要項、教員、シラバスを探すための検索リンクをまとめます。</p><span class="microtag">公式情報の確認が必要</span></button>
+<button class="feature-action" data-go="bibliography"><span class="ficon">▧</span><strong>本・参考文献・論文を探す</strong><p>研究テーマに関連する実在の書籍・論文を検索し、読みたい文献を保存します。</p><span class="microtag">無料の書誌データを検索</span></button>
 <button class="feature-action" data-go="recommend"><span class="ficon">✦</span><strong>活動・調査の推薦</strong><p>研究テーマと現状から、インタビュー・資料調査・実践活動の計画案を提示します。</p><span class="microtag">提案は仮のもの</span></button>
 <button class="feature-action" data-go="match"><span class="ficon">◎</span><strong>先生のマッチング</strong><p>専門分野と研究テーマから校内の相談相手を探します。現在は架空の先生です。</p><span class="microtag soon">実データと連携は後日</span></button>
-<button class="feature-action" data-go="applications"><span class="ficon">▦</span><strong>出願スケジュール管理</strong><p>出願締切（本人入力）と準備すべき書類、進捗をまとめます。</p><span class="microtag">Ver.6.0新機能・端末内のみ</span></button>
+<button class="feature-action" data-go="applications"><span class="ficon">▦</span><strong>出願スケジュール管理</strong><p>出願締切（本人入力）と準備すべき書類、進捗をまとめます。</p><span class="microtag">端末内デモ・連動対応</span></button>
  <button class="feature-action" data-go="interview"><span class="ficon">☷</span><strong>面接の想定質問</strong><p>志望理由や研究テーマに関する質問を自動で組み立てます。</p><span class="microtag">質問例の作成</span></button>
 <button class="feature-action" data-go="school"><span class="ficon">⚙</span><strong>学校向けのカスタマイズ</strong><p>学校名や進路相談の手順を登録して、校内に合わせた画面にできます。</p><span class="microtag">このブラウザ内だけで保存</span></button>
 </div></div>
@@ -173,7 +209,41 @@
 </div></div>
 <div id="recommendResults" class="stack" aria-live="polite"><div class="card empty">条件を入力して、おすすめプランを表示してください。</div></div>
 </section>
-<section id="page-documents" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">出願書類の下書きを確認</h2><div class="stack"><div class="field"><label for="docType">書類の種類</label><select id="docType"><option>志望理由書</option><option>活動報告書</option><option>自己推薦書</option><option>自己PR文</option></select></div><div class="field"><label for="docAim">大学・学部・求められる内容（任意）</label><input id="docAim" placeholder="例：○○学部／これまでの活動と学びを具体的に"></div><div class="field"><label for="charLimit">指定文字数（任意）</label><input type="number" id="charLimit" min="1" max="20000" placeholder="例：800"></div><div class="field"><label for="docText">確認したい文章</label><textarea id="docText" style="min-height:240px" placeholder="※試作版です。実際の個人情報や出願書類は入力しないでください。"></textarea></div><div class="row"><span class="num" id="docCount">0文字</span><button class="button" id="analyzeDoc">改善点を分析</button><button class="button ghost" id="saveDocVersion">デモ版を履歴に保存</button></div></div></div><div class="card"><h2 class="section-title">チェック結果</h2><div id="docResult" class="well">文章を入力して「改善点を分析」を押すと、文章構成・表現・見直しポイントを確認できます。</div><p class="notice">現在はルールベースの補助機能です。文意の理解、事実確認、本格的な推敲はできません。大学の募集要項や指定書式を優先してください。</p></div></div></section>
+<section id="page-documents" class="stack hidden"><div class="split"><div class="card"><h2 class="section-title">出願書類の下書きを確認</h2><div class="stack"><div class="field"><label for="draftApplication">関連づける出願先</label><select id="draftApplication"><option value="general">共通の下書き（大学を指定しない）</option></select></div><div class="field"><label for="docType">書類の種類</label><select id="docType"><option>志望理由書</option><option>活動報告書</option><option>自己推薦書</option><option>自己PR文</option></select></div><div class="field"><label for="docAim">大学・学部・求められる内容（任意）</label><input id="docAim" placeholder="例：○○学部／これまでの活動と学びを具体的に"></div><div class="field"><label for="charLimit">指定文字数（任意）</label><input type="number" id="charLimit" min="1" max="20000" placeholder="例：800"></div><div class="field"><label for="docText">確認したい文章</label><textarea id="docText" style="min-height:240px" placeholder="※試作版です。実際の個人情報や出願書類は入力しないでください。"></textarea></div><p class="notice" id="draftSaveStatus" aria-live="polite">入力するとこの端末に自動保存されます。サンプル文章だけを入力してください。</p><div class="row"><span class="num" id="docCount">0文字</span><button class="button" id="analyzeDoc">改善点を分析</button><button class="button ghost" id="saveDocVersion">デモ版を履歴に保存</button></div></div></div><div class="card"><h2 class="section-title">チェック結果</h2><div id="docResult" class="well">文章を入力して「改善点を分析」を押すと、文章構成・表現・見直しポイントを確認できます。</div><p class="notice">現在はルールベースの補助機能です。文意の理解、事実確認、本格的な推敲はできません。大学の募集要項や指定書式を優先してください。</p></div></div></section>
+
+<section id="page-bibliography" class="stack hidden">
+  <div class="card">
+   <h2 class="section-title">進路に関連する本・参考文献・論文を探す</h2>
+   <p class="bib-help">進みたい分野や研究テーマをもとに、Open Library（書籍）とCrossref（学術論文）の登録情報から候補を探します。見つかった文献のタイトル・著者・発行年・出典を表示します。AIが架空の資料を作る機能ではありません。</p>
+   <form id="bibSearchForm" class="stack">
+     <div class="search-grid">
+       <div class="field"><label for="bibTopic">興味・研究テーマ、または検索キーワード</label><input id="bibTopic" maxlength="120" placeholder="例：演劇 コミュニケーション教育"><span class="hint">検索されるのは入力したキーワードです。実名や出願書類は入れないでください。</span></div>
+       <div class="field"><label for="bibField">進路分野（候補を考えるための補助）</label><select id="bibField"><option value="">指定なし</option><option value="教育 心理">教育・心理</option><option value="演劇 芸術">芸術・表現</option><option value="経営 経済">経営・経済</option><option value="情報 AI">情報・AI</option><option value="医療 福祉">医療・福祉</option><option value="法律 社会">法律・社会</option><option value="国際 言語">国際・語学</option><option value="環境 科学">環境・科学</option><option value="スポーツ 健康">スポーツ・健康</option></select></div>
+     </div>
+     <div class="toolbar"><button class="button" type="submit" id="bibSearchButton">本・論文を検索する</button><button class="button secondary" type="button" id="bibLoadProfile">受験マイページのテーマを使う</button></div>
+   </form>
+   <p class="privacy-note" style="margin-top:16px">検索ボタンを押すと、入力した検索語がOpen LibraryとCrossrefに送信されます。検索結果の書誌情報は各サービスの登録内容に基づきます。関連度・査読の有無・内容の正確さや全文の無料公開は保証されません。最終的に出版元等で確認してください。</p>
+   <div id="bibSearchStatus" class="bib-status" style="margin-top:12px" aria-live="polite">キーワードを入力して検索してください。外部検索にはインターネット接続が必要です。</div>
+   <div class="bib-links" id="bibExternalLinks" aria-label="外部資料検索サイト"></div>
+  </div>
+  <div class="bib-layout">
+    <div class="card"><div class="row"><h2 class="section-title" style="margin:0">本・参考書</h2><span class="pill blue">Open Library</span></div><div id="bibBooks" class="bib-results" style="margin-top:15px"><div class="empty">検索すると実在する本の候補が表示されます。</div></div></div>
+    <div class="card"><div class="row"><h2 class="section-title" style="margin:0">学術論文</h2><span class="pill blue">Crossref</span></div><div id="bibPapers" class="bib-results" style="margin-top:15px"><div class="empty">検索すると実在する論文の候補が表示されます。</div></div></div>
+  </div>
+  <div class="card"><div class="row wrapsmall"><div><h2 class="section-title" style="margin:0">あとで読む資料</h2><p class="notice" style="margin:5px 0 0">保存した文献には読書メモ・研究への活用方法を追記できます。メモはこのブラウザ内だけに保存されます。</p></div><span class="pill" id="bibSavedCount">0件</span></div><div id="bibSaved" class="bib-results" style="margin-top:15px"><div class="empty">まだ保存した文献はありません。</div></div></div>
+</section>
+<section id="page-journal" class="stack hidden">
+<div class="card"><h2 class="section-title">活動・経験ノート</h2><p class="notice">活動の事実、工夫、学びを架空の内容で記録します。研究テーマと結び付けて書類や面接の準備に使えます。保存はこの端末のみです。</p>
+<form id="journalForm" class="stack"><div class="search-grid"><div class="field"><label for="journalTitle">活動名</label><input id="journalTitle" maxlength="90" placeholder="例：校内での演劇ワークショップ" required></div><div class="field"><label for="journalDate">実施日（仮）</label><input id="journalDate" type="date"></div></div>
+<div class="field"><label for="journalRole">自分の役割・工夫</label><textarea id="journalRole" maxlength="700" placeholder="例：話しやすい進行に変更した"></textarea></div>
+<div class="field"><label for="journalLearn">結果・学び・次の行動</label><textarea id="journalLearn" maxlength="700" placeholder="例：質問の順序が参加者の発言に影響すると気づいた"></textarea></div>
+<button class="button" type="submit">活動記録を保存する</button></form></div>
+<div class="card"><div class="row wrapsmall"><h2 class="section-title" style="margin:0">活動の記録</h2><span class="pill" id="journalCount">0件</span></div><div id="journalList" class="stack" style="margin-top:12px"></div></div>
+</section>
+<section id="page-compare" class="stack hidden">
+<div class="card"><h2 class="section-title">志望大学の比較</h2><p class="notice">「出願スケジュール」に登録した大学が自動で並びます。学べること、入試方式、期限、出典などを比べられます。学費は入力した金額だけ表示し、公式確認が必要です。</p><div class="toolbar"><button class="button secondary" data-go="applications">大学・学部を登録する</button><button class="button ghost" data-go="research">公式情報を調べる</button></div></div>
+<div id="uniComparison" class="linked-comparison"></div>
+</section>
 <section id="page-research" class="stack hidden"><div class="card"><h2 class="section-title">大学・教授・授業の調査</h2><p class="notice">大学名と研究テーマを指定して、公式サイトを調べる検索リンクを作成します。現在は検索の補助までで、AIによる自動要約・事実確認は未実装です。</p><div class="search-grid"><div class="field"><label for="university">大学名</label><input id="university" placeholder="例：○○大学"></div><div class="field"><label for="researchTopic">研究テーマ</label><input id="researchTopic" placeholder="例：演劇 コミュニケーション教育"></div></div><div class="toolbar"><button class="button" id="researchGo">検索リンクを作る</button></div><div id="researchResults" class="stack" style="margin-top:16px"></div></div><div class="three"><div class="feature"><strong>① 大学情報</strong><p>教育理念、学部・学科、選抜方式、出願資格などを公式資料から確認。</p></div><div class="feature"><strong>② 教員・研究室</strong><p>専門分野、論文、研究テーマと志望内容の接点を探す。</p></div><div class="feature"><strong>③ 授業・カリキュラム</strong><p>シラバスから学べる内容、履修条件、年度の違いを確認。</p></div></div></section>
 <section id="page-activities" class="stack hidden"><div class="card"><h2 class="section-title">活動の候補を考える</h2><p class="notice">テーマに関連する実践活動を提案するためのサンプル機能です。実施可能性、受け入れ先の承諾、学校のルールを必ず確認する設計にします。</p><div class="search-grid"><div class="field"><label for="activityTopic">深めたいテーマ</label><input id="activityTopic" value="コミュニケーション教育" placeholder="例：地域の防災"></div><div class="field"><label for="activityKind">特に取り組みたいこと</label><select id="activityKind"><option value="all">幅広く提案</option><option value="interview">インタビュー</option><option value="volunteer">ボランティア</option><option value="research">調査・検証</option></select></div></div><div class="toolbar"><button class="button" id="activitiesGo">活動案を表示</button></div><div id="activityResults" class="stack" style="margin-top:16px"></div></div></section>
 <section id="page-interview" class="stack hidden">
@@ -197,7 +267,7 @@
 </section>
 
 <section id="page-applications" class="stack hidden">
- <div class="alert"><strong>Ver.6.0無料デモ：</strong>出願情報はこのブラウザだけに保存されます。実在する受験校の非公開情報、氏名、受験番号、実際の提出書類は登録しないでください。</div>
+ <div class="alert"><strong>Ver.6.2無料デモ：</strong>出願情報はこのブラウザだけに保存されます。実在する受験校の非公開情報、氏名、受験番号、実際の提出書類は登録しないでください。</div>
  <div class="free-grid" id="applicationStats" aria-live="polite"></div>
  <div class="split">
   <div class="card"><h2 class="section-title">架空の出願予定を登録する</h2>
@@ -206,7 +276,10 @@
     <div class="field"><label for="appMethod">入試方式</label><select id="appMethod"><option>総合型選抜</option><option>学校推薦型選抜</option><option>その他</option></select></div>
     <div class="field"><label for="appDue">出願締切日（仮）</label><input type="date" id="appDue" required></div>
     <div class="field"><label for="appDoc">準備する書類（架空の項目）</label><input id="appDoc" maxlength="120" placeholder="例：志望理由書、活動報告書" required></div>
-    <div class="field"><label for="appStage">準備状況</label><select id="appStage"><option value="notstarted">未着手</option><option value="working">準備中</option><option value="review">先生に確認を依頼中</option><option value="ready">提出準備完了</option></select></div>
+    <div class="field"><label for="appProgram">学べる内容・気になる授業（任意・本人入力）</label><textarea id="appProgram" maxlength="500" placeholder="例：対話と表現の授業に関心がある"></textarea></div>
+<div class="search-grid"><div class="field"><label for="appFees">学費メモ（任意・本人入力）</label><input id="appFees" maxlength="90" placeholder="例：大学公式ページで確認する"></div>
+<div class="field"><label for="appSource">出典URL（任意）</label><input id="appSource" type="url" maxlength="450" placeholder="https://...（募集要項・公式ページ）"></div></div>
+<div class="field"><label for="appStage">準備状況</label><select id="appStage"><option value="notstarted">未着手</option><option value="working">準備中</option><option value="review">先生に確認を依頼中</option><option value="ready">提出準備完了</option></select></div>
     <button class="button" type="submit">デモ出願予定を追加</button>
    </form>
    <p class="notice">締切は本人入力であり公式情報と連動しません。デモの例を使う場合も、日付の正確性は保証されません。</p>
@@ -265,7 +338,7 @@ let teachers=[
 {id:'G',name:'G先生（架空）',subject:'保健体育',fields:['sports','education'],keywords:['スポーツ','健康','運動','身体','体育','心理','チーム','教育'],description:'スポーツ指導、健康教育、チーム内コミュニケーションに関する相談の例。'},
 {id:'H',name:'H先生（架空）',subject:'芸術',fields:['arts','education'],keywords:['演劇','芸術','美術','音楽','表現','創作','ダンス','教育','舞台','俳優','声優'],description:'演劇や芸術表現、創作活動、作品制作を通じた学びについて相談する例。'}
 ];
-const pages={home:['あなたの学校の受験サポート','総合型選抜の書類・研究活動・進路相談を一つにまとめる。'],school:['学校向けの設定','校内の進路案内に合わせて、この画面をカスタマイズする。'],interview:['面接の想定質問','志望理由・活動・研究内容を伝える練習をする。'],recommend:['活動・調査をおすすめ','研究テーマと目的から、次に取り組むことを具体化します。'],match:['相談したい先生を探す','研究テーマに近い分野の先生を探し、面接練習を申し込む。'],documents:['出願書類をチェック','志望理由書・活動報告書などの下書きを見直す。'],research:['大学と学びを調べる','大学・教授・授業を公式情報から探す。'],activities:['志望につながる活動を考える','研究テーマからインタビュー・ボランティア・調査の方向性を考える。'],requests:['申し込み状況','この画面で作成したデモ申し込みを確認する。'],profile:['受験マイページ','志望校・出願期限・準備の進み具合を整理する。'],applications:['出願スケジュール','出願予定と準備状況を架空の情報で整理する。'],pitch:['学校への導入提案','プレゼンの実演手順と導入前の確認項目。'],history:['添削履歴と比較','書類の版ごとの変化を振り返る。'],teacherportal:['先生用マイページ','自己登録・受付状況・申し込みへの回答を操作する。'],admin:['管理者ダッシュボード','教員登録・在籍状況・大学情報の承認を体験する。'],updates:['大学情報の更新管理','公式情報の確認と更新承認の仕組みを試す。'],feedback:['ご意見・不具合報告','改善の提案をデモとして記録する。']};
+const pages={home:['あなたの学校の受験サポート','総合型選抜の書類・研究活動・進路相談を一つにまとめる。'],school:['学校向けの設定','校内の進路案内に合わせて、この画面をカスタマイズする。'],interview:['面接の想定質問','志望理由・活動・研究内容を伝える練習をする。'],recommend:['活動・調査をおすすめ','研究テーマと目的から、次に取り組むことを具体化します。'],match:['相談したい先生を探す','研究テーマに近い分野の先生を探し、面接練習を申し込む。'],documents:['出願書類をチェック','志望理由書・活動報告書などの下書きを見直す。'],journal:['活動・経験ノート','活動を記録し、書類や面接の準備に生かす。'],compare:['志望大学を比較','出願予定と公式情報の出典を並べて確認する。'],research:['大学と学びを調べる','大学・教授・授業を公式情報から探す。'],bibliography:['進路に関係する本・論文','研究テーマをもとに実在の書籍・論文を探して保存する。'],activities:['志望につながる活動を考える','研究テーマからインタビュー・ボランティア・調査の方向性を考える。'],requests:['申し込み状況','この画面で作成したデモ申し込みを確認する。'],profile:['受験マイページ','志望校・出願期限・準備の進み具合を整理する。'],applications:['出願スケジュール','出願予定と準備状況を架空の情報で整理する。'],pitch:['学校への導入提案','プレゼンの実演手順と導入前の確認項目。'],history:['添削履歴と比較','書類の版ごとの変化を振り返る。'],teacherportal:['先生用マイページ','自己登録・受付状況・申し込みへの回答を操作する。'],admin:['管理者ダッシュボード','教員登録・在籍状況・大学情報の承認を体験する。'],updates:['大学情報の更新管理','公式情報の確認と更新承認の仕組みを試す。'],feedback:['ご意見・不具合報告','改善の提案をデモとして記録する。']};
 const $=id=>document.getElementById(id);let requests=[];let chosen=null;let currentMatches=[];
 const DEMO_KEY='compass_v4_demo_only';
 let demoLoaded={};try{demoLoaded=JSON.parse(localStorage.getItem(DEMO_KEY)||'{}')||{}}catch(e){}
@@ -275,6 +348,10 @@ requests=Array.isArray(demoLoaded.requests)?demoLoaded.requests:[];
 let studentProfile=demoLoaded.studentProfile||{nickname:'生徒A（架空）',university:'',method:'総合型選抜',topic:'',deadline:''};
 let todoItems=Array.isArray(demoLoaded.todoItems)?demoLoaded.todoItems:[{id:'seedtask',text:'募集要項を公式サイトで確認する',done:false}];
 let applicationPlans=Array.isArray(demoLoaded.applicationPlans)?demoLoaded.applicationPlans:[];
+let bibliographyShelf=Array.isArray(demoLoaded.bibliographyShelf)?demoLoaded.bibliographyShelf.slice(0,100):[];
+let activityJournal=Array.isArray(demoLoaded.activityJournal)?demoLoaded.activityJournal.slice(0,80):[];
+let reflections=demoLoaded.reflections && typeof demoLoaded.reflections==='object' && !Array.isArray(demoLoaded.reflections)?demoLoaded.reflections:{};
+let documentDrafts=demoLoaded.documentDrafts && typeof demoLoaded.documentDrafts==='object' && !Array.isArray(demoLoaded.documentDrafts)?demoLoaded.documentDrafts:{};
 let reviewHistory=Array.isArray(demoLoaded.reviewHistory)?demoLoaded.reviewHistory:[];
 let feedbackItems=Array.isArray(demoLoaded.feedbackItems)?demoLoaded.feedbackItems:[];
 let universityDrafts=Array.isArray(demoLoaded.universityDrafts)?demoLoaded.universityDrafts:[];
@@ -285,7 +362,7 @@ function stampNow(){return new Date().toLocaleString('ja-JP')}
 function newId(){return 'd'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 function pendingCount(id){return requests.filter(r=>r.teacherId===id && ['pending','scheduling','approved'].includes(r.status)).length}
 function eligible(t){return t.active!==false&&t.approved!==false&&t.status==='open'&&pendingCount(t.id)<Number(t.limit||3)}
-function persistDemo(){try{localStorage.setItem(DEMO_KEY,JSON.stringify({teachers,requests,studentProfile,todoItems,applicationPlans,reviewHistory,feedbackItems,universityDrafts,adminLog:adminLog.slice(0,40)}));$('saveStatus').textContent='この端末にデモ保存中'}catch(e){$('saveStatus').textContent='デモ保存不可：この画面を閉じると消える場合があります'}$('requestBadge').textContent=requests.length?'('+requests.length+')':''}
+function persistDemo(){try{localStorage.setItem(DEMO_KEY,JSON.stringify({teachers,requests,studentProfile,todoItems,applicationPlans,bibliographyShelf,activityJournal,reflections,documentDrafts,reviewHistory,feedbackItems,universityDrafts,adminLog:adminLog.slice(0,40)}));$('saveStatus').textContent='この端末にデモ保存中'}catch(e){$('saveStatus').textContent='デモ保存不可：この画面を閉じると消える場合があります'}$('requestBadge').textContent=requests.length?'('+requests.length+')':''}
 function audit(msg){adminLog.unshift({id:newId(),time:stampNow(),msg});adminLog=adminLog.slice(0,40);persistDemo()}
 
 // Ver.5 デモ用ログイン。公開HTMLに資格情報が含まれ、本物の認証・権限管理ではありません。
@@ -295,7 +372,7 @@ const DEMO_USERS={
   'admin-demo':{password:'admin123',role:'admin',name:'管理者デモ'}
 };
 const ROLE_PAGES={
-  student:['home','match','recommend','documents','research','activities','requests','interview','profile','applications','history','feedback'],
+  student:['home','match','recommend','documents','research','bibliography','activities','journal','compare','requests','interview','profile','applications','history','feedback'],
   teacher:['teacherportal','feedback'],
   admin:['admin','pitch','updates','school','feedback']
 };
@@ -360,8 +437,8 @@ function showPage(p,fromHistory=false){
  Object.keys(pages).forEach(k=>$('page-'+k).classList.toggle('hidden',k!==p));
  document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));
  $('pageTitle').textContent=pages[p][0];$('pageSubtitle').textContent=pages[p][1];
- if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='applications')renderApplications();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();
- closeMobileMenu();updateNavButtons();window.scrollTo({top:0,behavior:'instant'});
+ if(p==='home')renderToday();if(p==='bibliography')renderBibShelf();if(p==='requests')renderRequests();if(p==='profile')renderProfile();if(p==='applications'){renderApplications();renderDocChecklists();}if(p==='journal')renderJournal();if(p==='compare')renderComparison();if(p==='documents')restoreDocumentDraft();if(p==='history')renderHistory();if(p==='teacherportal')renderTeacherPortal();if(p==='admin')renderAdmin();if(p==='updates')renderUpdates();if(p==='feedback')renderFeedback();
+ if(p==='documents')updateDraftApplicationOptions();closeMobileMenu();updateNavButtons();window.scrollTo({top:0,behavior:'instant'});
 }
 document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
 document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
@@ -377,8 +454,8 @@ function closeModal(){$('modalBg').classList.add('hidden');}$('closeModal').addE
 $('requestForm').addEventListener('submit',e=>{e.preventDefault();if(!chosen)return;const rec={teacher:chosen.name,subject:chosen.subject,applicant:$('applicant').value.trim(),purpose:$('purpose').value,topic:$('requestTopic').value.trim(),preferred:$('preferred').value.trim(),stamp:stampNow(),id:newId(),teacherId:chosen.id,status:'pending',reply:''};requests.unshift(rec);audit('デモ申し込みを作成');$('requestBadge').textContent=`(${requests.length})`;closeModal();$('requestForm').reset();showPage('requests');});
 function renderRequests(){
  if(!requests.length){$('requestsList').innerHTML='<div class="empty">デモ申し込みはまだありません。「先生マッチング」から作成できます。</div>';return;}
- $('requestsList').innerHTML=requests.map((r,i)=>`<div class="request"><div class="row"><strong>${htmlEscape(r.teacher)}</strong><span class="pill blue">${htmlEscape(statLabels[r.status]||'確認待ち')}・デモ</span></div><p>${htmlEscape(r.purpose)} ／ ${htmlEscape(r.stamp)}</p><div>申し込み者：${htmlEscape(r.applicant)}</div><div>内容：${htmlEscape(r.topic)}</div>${r.preferred?`<div>希望：${htmlEscape(r.preferred)}</div>`:''}${r.reply?`<div class="well">先生からの回答（デモ）：${htmlEscape(r.reply)}</div>`:''}<div class="toolbar"><button class="button secondary" data-copy="${i}">申し込み文をコピー</button></div></div>`).join('');
- document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{const r=requests[+b.dataset.copy];const s=`【面接・進路相談の申し込み（下書き）】\n相談先：${r.teacher}\n申込者：${r.applicant}\n相談目的：${r.purpose}\n相談内容：${r.topic}\n希望：${r.preferred||'指定なし'}`;copyText(s,'申し込み文をコピーしました。実際には送信していません。');}));
+ $('requestsList').innerHTML=requests.map((r,i)=>`<div class="request"><div class="row"><strong>${htmlEscape(r.teacher)}</strong><span class="pill blue">${htmlEscape(statLabels[r.status]||'確認待ち')}・デモ</span></div><p>${htmlEscape(r.purpose)} ／ ${htmlEscape(r.stamp)}</p><div>申し込み者：${htmlEscape(r.applicant)}</div><div>内容：${htmlEscape(r.topic)}</div>${r.preferred?`<div>希望：${htmlEscape(r.preferred)}</div>`:''}${r.reply?`<div class="well">先生からの回答（デモ）：${htmlEscape(r.reply)}</div>`:''}<div class="toolbar"><button class="button secondary" data-copy="${i}">申し込み文をコピー</button></div><div data-request-reflection="${r.id}"></div></div>`).join('');
+ renderReflections();document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{const r=requests[+b.dataset.copy];const s=`【面接・進路相談の申し込み（下書き）】\n相談先：${r.teacher}\n申込者：${r.applicant}\n相談目的：${r.purpose}\n相談内容：${r.topic}\n希望：${r.preferred||'指定なし'}`;copyText(s,'申し込み文をコピーしました。実際には送信していません。');}));
 }
 $('clearRequests').addEventListener('click',()=>{if(!confirm('デモの申し込み一覧を削除しますか？'))return;requests=[];persistDemo();renderRequests();});
 $('docText').addEventListener('input',()=>{$('docCount').textContent=`${Array.from($('docText').value).length}文字`;});
@@ -495,7 +572,7 @@ $('makeQuestions').addEventListener('click',()=>{
 });
 
 
-// Ver.6.0: ブラウザ内だけの架空の出願スケジュール。外部送信はしない。
+// Ver.6.2: ブラウザ内だけの架空の出願スケジュール。外部送信はしない。
 const APPLICATION_STAGE={notstarted:'未着手',working:'準備中',review:'先生に確認を依頼中（デモ）',ready:'提出準備完了'};
 function renderApplications(){
   const sorted=applicationPlans.slice().sort((a,b)=>a.due.localeCompare(b.due));
@@ -505,15 +582,17 @@ function renderApplications(){
   $('applicationStats').innerHTML=`<div class="free-metric"><strong>${applicationPlans.length}</strong><small>デモ出願予定</small></div><div class="free-metric"><strong>${ready}</strong><small>提出準備完了</small></div><div class="free-metric"><strong>${soon}</strong><small>14日以内の締切（入力値）</small></div>`;
   const list=$('applicationList');
   if(!sorted.length){list.innerHTML='<div class="empty">まだ登録がありません。架空の出願予定を追加してください。</div>';return;}
-  list.innerHTML=sorted.map(a=>`<div class="free-application"><div class="row wrapsmall"><strong>${htmlEscape(a.uni)}</strong><span class="free-status ${a.stage==='ready'?'complete':''}">${htmlEscape(APPLICATION_STAGE[a.stage]||'未着手')}</span></div><p>${htmlEscape(a.method)}／出願締切（仮）：${htmlEscape(a.due)}</p><p>必要書類（仮）：${htmlEscape(a.doc)}</p><div class="field"><label for="stage-${a.id}">準備状況を更新</label><select id="stage-${a.id}" data-application-stage="${a.id}"><option value="notstarted" ${a.stage==='notstarted'?'selected':''}>未着手</option><option value="working" ${a.stage==='working'?'selected':''}>準備中</option><option value="review" ${a.stage==='review'?'selected':''}>先生に確認を依頼中（デモ）</option><option value="ready" ${a.stage==='ready'?'selected':''}>提出準備完了</option></select></div><div class="toolbar"><button class="button ghost" data-application-remove="${a.id}" type="button">この予定を削除</button></div></div>`).join('');
+  list.innerHTML=sorted.map(a=>`<div class="free-application"><div class="row wrapsmall"><strong>${htmlEscape(a.uni)}</strong><span class="free-status ${a.stage==='ready'?'complete':''}">${htmlEscape(APPLICATION_STAGE[a.stage]||'未着手')}</span></div><p>${htmlEscape(a.method)}／出願締切（仮）：${htmlEscape(a.due)}</p><p>必要書類（仮）：${htmlEscape(a.doc)}</p><p>学び：${htmlEscape(a.program||'未入力')} ／ 学費：${htmlEscape(a.fees||'未確認')}</p><div class="linked-mini">出典：${a.sourceUrl&&safeLink(a.sourceUrl)?`<a href="${htmlEscape(a.sourceUrl)}" target="_blank" rel="noopener noreferrer">登録したページを開く ↗</a>`:'未登録'} ${a.sourceCheckedAt?`<span class="linked-good">本人確認済み：${htmlEscape(a.sourceCheckedAt)}</span>`:'<span class="linked-warning">公式確認前</span>'}</div><div class="linked-form"><label class="field">出典URLの編集<input type="url" data-source-input="${a.id}" value="${htmlEscape(a.sourceUrl||'')}" placeholder="https://...（大学公式サイト等）"></label><div class="toolbar"><button class="button secondary" data-source-save="${a.id}" type="button">出典を保存</button><button class="button ghost" data-source-confirm="${a.id}" type="button">自分で公式情報を確認済みにする</button></div><div class="linked-mini">出典の登録・確認日は本人の申告です。アプリは公式情報を検証していません。</div></div><div class="linked-form"><strong>必要書類チェックリスト</strong><div data-checklist-holder="${a.id}"></div></div><div class="field"><label for="stage-${a.id}">準備状況を更新</label><select id="stage-${a.id}" data-application-stage="${a.id}"><option value="notstarted" ${a.stage==='notstarted'?'selected':''}>未着手</option><option value="working" ${a.stage==='working'?'selected':''}>準備中</option><option value="review" ${a.stage==='review'?'selected':''}>先生に確認を依頼中（デモ）</option><option value="ready" ${a.stage==='ready'?'selected':''}>提出準備完了</option></select></div><div class="toolbar"><button class="button ghost" data-application-remove="${a.id}" type="button">この予定を削除</button></div></div>`).join('');
   list.querySelectorAll('[data-application-stage]').forEach(sel=>sel.addEventListener('change',()=>{const a=applicationPlans.find(x=>x.id===sel.dataset.applicationStage);if(a){a.stage=sel.value;persistDemo();renderApplications()}}));
   list.querySelectorAll('[data-application-remove]').forEach(btn=>btn.addEventListener('click',()=>{applicationPlans=applicationPlans.filter(x=>x.id!==btn.dataset.applicationRemove);persistDemo();renderApplications()}));
+  attachApplicationLinks();
 }
 $('applicationForm').addEventListener('submit',e=>{
  e.preventDefault();if(sessionAccount?.role!=='student')return;
  const uni=$('appUni').value.trim(),method=$('appMethod').value,due=$('appDue').value,doc=$('appDoc').value.trim(),stage=$('appStage').value;
  if(!uni||!/^\d{4}-\d{2}-\d{2}$/.test(due)||!doc||applicationPlans.length>=30){alert('入力内容を確認してください。デモの上限は30件です。');return}
- applicationPlans.push({id:newId(),uni,method,due,doc,stage});persistDemo();$('applicationForm').reset();renderApplications();
+ const url=$('appSource').value.trim();if(url && !/^https:\/\/[^\s]+$/i.test(url)){alert('出典URLはhttps://から入力してください。');return}
+ applicationPlans.push({id:newId(),uni,method,due,doc,stage,program:safeVal('appProgram'),fees:safeVal('appFees'),sourceUrl:url,sourceCheckedAt:'',checklist:[]});persistDemo();$('applicationForm').reset();renderApplications();
 });
 $('loadApplicationSamples').addEventListener('click',()=>{
  if(sessionAccount?.role!=='student')return;
@@ -534,7 +613,7 @@ function renderProfile(){
  $('taskList').querySelectorAll('[data-task-toggle]').forEach(b=>b.addEventListener('change',()=>{const t=todoItems.find(x=>x.id===b.dataset.taskToggle);if(t)t.done=b.checked;persistDemo();renderProfile()}));
  $('taskList').querySelectorAll('[data-task-remove]').forEach(b=>b.addEventListener('click',()=>{todoItems=todoItems.filter(t=>t.id!==b.dataset.taskRemove);persistDemo();renderProfile()}));
 }
-$('profileForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='student')return;studentProfile={nickname:safeVal('pfName'),university:safeVal('pfUniversity'),method:safeVal('pfMethod'),topic:safeVal('pfTopic'),deadline:safeVal('pfDeadline')};persistDemo();renderProfile();alert('仮プロフィールをこの端末に保存しました。')});
+$('profileForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='student')return;studentProfile={nickname:safeVal('pfName'),university:safeVal('pfUniversity'),method:safeVal('pfMethod'),topic:safeVal('pfTopic'),deadline:safeVal('pfDeadline')};persistDemo();syncTopicDefaults();renderProfile();alert('仮プロフィールをこの端末に保存しました。')});
 $('addTask').addEventListener('click',()=>{const text=safeVal('taskInput');if(!text)return;todoItems.unshift({id:newId(),text,done:false});$('taskInput').value='';persistDemo();renderProfile()});
 function renderHistory(){
  const el=$('historyList');if(!reviewHistory.length){el.innerHTML='<div class="empty">まだ保存されたデモ文章はありません。「書類チェック」でサンプル文章を保存してください。</div>';$('historyCompare').innerHTML='';return}
@@ -572,11 +651,304 @@ function renderUpdates(){ $('publishedUpdates').innerHTML=universityDrafts.filte
 $('updateForm').addEventListener('submit',e=>{e.preventDefault();if(sessionAccount?.role!=='admin')return;let url=safeVal('updateUrl');if(url&&!/^https:\/\//i.test(url)){alert('URLはhttps://から始めてください。');return}universityDrafts.unshift({id:newId(),university:safeVal('updateUni'),year:safeVal('updateYear')||'未記入',info:safeVal('updateInfo'),url,status:'pending',addedAt:stampNow()});$('updateInfo').value='';$('updateUrl').value='';audit('大学情報の更新候補を手動で追加');renderUpdates();alert('デモ更新候補を管理者の確認待ちにしました。')});
 function renderFeedback(){$('feedbackList').innerHTML=feedbackItems.length?feedbackItems.slice().reverse().map(x=>`<div class="compact-card"><strong>${htmlEscape(x.kind)}</strong><p>${htmlEscape(x.text)}</p></div>`).join(''):'<div class="empty">まだ報告はありません。</div>'}
 $('feedbackForm').addEventListener('submit',e=>{e.preventDefault();const text=safeVal('feedbackText');if(!text)return;feedbackItems.push({id:newId(),kind:safeVal('feedbackKind'),text});$('feedbackText').value='';persistDemo();renderFeedback();alert('このブラウザ内のデモに登録しました。学校には送信されていません。')});
-$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'6.0-free',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,applicationPlans,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
+$('exportDemo').addEventListener('click',()=>{const data={type:'進路コンパス デモデータ',version:'6.2-linked-free',exportedAt:stampNow(),teachers,requests,studentProfile,todoItems,reviewHistory,applicationPlans,bibliographyShelf,activityJournal,reflections,documentDrafts,feedbackItems,universityDrafts};const s=JSON.stringify(data,null,2);try{const a=document.createElement('a'),blob=new Blob([s],{type:'application/json'});a.href=URL.createObjectURL(blob);a.download='compass-demo-export.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)}catch(e){copyText(s,'デモデータをコピーしました。')} });
 $('resetDemo').addEventListener('click',()=>{if(!confirm('この端末に保存したVer.5のデモデータをすべて初期化しますか？'))return;try{localStorage.removeItem(DEMO_KEY)}catch(e){}location.reload()});
+
+// 進路コンパス Ver.6.2: 実在する書誌データの検索。外部APIに送信するのは検索語のみ。
+let bibCurrentResults=[];
+let bibSearchCounter=0;
+function bibSafeText(x,max=250){return String(x??'').replace(/\s+/g,' ').trim().slice(0,max)}
+function bibExternalSearchLinks(query){
+ const q=encodeURIComponent(query);
+ return [
+  {title:'CiNii Research（日本語文献）',url:'https://cir.nii.ac.jp/all?q='+q},
+  {title:'国立国会図書館サーチ（本を調べる）',url:'https://ndlsearch.ndl.go.jp/search?cs=bib&q='+q},
+  {title:'J-STAGE（国内論文）',url:'https://www.jstage.jst.go.jp/result/global/-char/ja?globalSearchKey='+q}
+ ];
+}
+function bibLinkHtml(query){
+ return bibExternalSearchLinks(query).map(v=>`<a href="${v.url}" target="_blank" rel="noopener noreferrer">${htmlEscape(v.title)} ↗</a>`).join('');
+}
+function bibRenderCard(x, saved=false){
+ const yes=bibliographyShelf.some(b=>b.id===x.id);
+ const title=htmlEscape(bibSafeText(x.title,350));
+ const author=htmlEscape(bibSafeText(x.author||'著者情報なし',180));
+ const source=htmlEscape(x.source);
+ const venue=x.venue?` · ${htmlEscape(bibSafeText(x.venue,120))}`:'';
+ const year=x.year?htmlEscape(String(x.year)):'年不明';
+ const summary=`${author} · ${year}${venue}`;
+ const button = saved
+   ? `<div class="linked-form"><label class="field">読書メモ・研究への活用方法<textarea class="linked-note" maxlength="800" data-bib-note="${htmlEscape(x.id)}" placeholder="何が参考になるか、どの部分を確認したいか">${htmlEscape(x.note||'')}</textarea></label><button class="button secondary" data-bib-note-save="${htmlEscape(x.id)}">メモを保存</button><button class="button ghost" data-bib-to-draft="${htmlEscape(x.id)}">書類の下書きに参照メモを転記</button></div><button class="button ghost" data-bib-remove="${htmlEscape(x.id)}">保存から外す</button>`
+   : `<button class="button secondary" data-bib-save="${htmlEscape(x.id)}" ${yes?'disabled':''}>${yes?'保存済み':'あとで読むに保存'}</button>`;
+ return `<article class="bib-record"><span class="bib-source">${source}</span><h3>${title}</h3><p class="bib-meta">${summary}</p><div class="toolbar"><a class="button" href="${htmlEscape(x.url)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">出典のページを開く ↗</a>${button}<button class="button ghost" data-bib-copy="${htmlEscape(x.id)}">書誌情報をコピー</button></div></article>`;
+}
+function renderBibShelf(){
+ $('bibSavedCount').textContent=bibliographyShelf.length+'件';
+ $('bibSaved').innerHTML=bibliographyShelf.length?bibliographyShelf.map(v=>bibRenderCard(v,true)).join(''):'<div class="empty">まだ保存した文献はありません。</div>';
+}
+function bibRenderResults(items,id){
+ $(id).innerHTML=items.length?items.map(x=>bibRenderCard(x)).join(''):'<div class="empty">登録情報が見つかりませんでした。検索語を短くするか、下の外部サイトでも探してください。</div>';
+}
+function bibAuthorNames(authors){
+ return Array.isArray(authors)?authors.slice(0,3).map(a=>bibSafeText([a.given,a.family].filter(Boolean).join(' '),75)).filter(Boolean).join('、'):'';
+}
+function bibNormalizeBooks(data){
+ return (Array.isArray(data?.docs)?data.docs:[]).map(d=>{
+  const key=String(d.key||'');
+  const title=bibSafeText(d.title,350);
+  if(!title || !/^\/(works|books)\/OL\d+[WM]$/.test(key))return null;
+  return {
+   id:'openlibrary:'+key,
+   type:'book',source:'Open Library',title,
+   author:(Array.isArray(d.author_name)?d.author_name.slice(0,3).map(a=>bibSafeText(a,80)).join('、'):'')||'著者情報なし',
+   year:Number.isInteger(d.first_publish_year)?d.first_publish_year:null,
+   venue:'',url:'https://openlibrary.org'+key
+  };
+ }).filter(Boolean).filter((v,i,a)=>a.findIndex(k=>k.id===v.id)===i).slice(0,8);
+}
+function bibNormalizePapers(data){
+ return (Array.isArray(data?.message?.items)?data.message.items:[]).map(d=>{
+  const doi=String(d.DOI||'').trim();
+  const title=bibSafeText(Array.isArray(d.title)?d.title[0]:'',350);
+  if(!title || !/^10\.\d{4,9}\/\S+$/i.test(doi))return null;
+  const date=d.published?.['date-parts']?.[0]?.[0]||d.issued?.['date-parts']?.[0]?.[0];
+  return {id:'crossref:'+doi.toLowerCase(),type:'paper',source:'Crossref',title,
+   author:bibAuthorNames(d.author)||'著者情報なし',year:Number.isInteger(date)?date:null,
+   venue:bibSafeText(Array.isArray(d['container-title'])?d['container-title'][0]:'',120),
+   url:'https://doi.org/'+encodeURI(doi).replace(/#/g,'%23')};
+ }).filter(Boolean).filter((v,i,a)=>a.findIndex(k=>k.id===v.id)===i).slice(0,8);
+}
+function bibQueryTokens(input){return bibSafeText(input,120).split(/[\s\u3000、,・／/]+/).filter(Boolean)}
+async function bibFetch(url){
+ const controller=new AbortController();
+ const timer=setTimeout(()=>controller.abort(),12500);
+ try{
+  const res=await fetch(url,{signal:controller.signal,mode:'cors',cache:'no-store'});
+  if(!res.ok)throw new Error('HTTP '+res.status);
+  return await res.json();
+ }finally{clearTimeout(timer)}
+}
+async function bibSearchBooks(q){
+ const url='https://openlibrary.org/search.json?'+new URLSearchParams({q,limit:'15',fields:'key,title,author_name,first_publish_year'});
+ return bibNormalizeBooks(await bibFetch(url));
+}
+async function bibSearchPapers(q){
+ const url='https://api.crossref.org/works?'+new URLSearchParams({'query.bibliographic':q,rows:'15',select:'DOI,title,author,published,issued,container-title'});
+ return bibNormalizePapers(await bibFetch(url));
+}
+async function bibSearch(e){
+ e.preventDefault();
+ const topic=bibSafeText($('bibTopic').value,120);
+ const field=bibSafeText($('bibField').value,60);
+ const fieldKeyword=bibQueryTokens(field)[0]||'';
+ const query=[topic,fieldKeyword&&!topic.includes(fieldKeyword)?fieldKeyword:''].filter(Boolean).join(' ').trim();
+ if(!query){$('bibSearchStatus').textContent='研究テーマを入力するか、進路分野を選んでください。';return}
+ const seq=++bibSearchCounter;
+ $('bibSearchButton').disabled=true;$('bibSearchButton').textContent='検索中…';
+ $('bibSearchStatus').textContent='書誌データを取得しています。通信状況により10〜15秒程度かかる場合があります。';
+ $('bibExternalLinks').innerHTML=bibLinkHtml(query);
+ $('bibBooks').innerHTML='<div class="empty">本を検索中…</div>';
+ $('bibPapers').innerHTML='<div class="empty">論文を検索中…</div>';
+ const [booksResult,papersResult]=await Promise.allSettled([bibSearchBooks(query),bibSearchPapers(query)]);
+ if(seq!==bibSearchCounter)return;
+ let books=booksResult.status==='fulfilled'?booksResult.value:[];
+ let papers=papersResult.status==='fulfilled'?papersResult.value:[];
+ // 2語以上で検索結果がなければ、検索語を1つに減らして広く探す。
+ const tokens=bibQueryTokens(topic||query);
+ const fallbacks=[topic,tokens[0],fieldKeyword].filter((q,i,arr)=>q&&q!==query&&arr.indexOf(q)===i);
+ let broadened=false;
+ for(const fallback of fallbacks){
+  if(books.length&&papers.length)break;
+  const pending=[];
+  if(books.length===0)pending.push(bibSearchBooks(fallback).then(v=>({kind:'books',v})).catch(()=>null));
+  if(papers.length===0)pending.push(bibSearchPapers(fallback).then(v=>({kind:'papers',v})).catch(()=>null));
+  const extra=await Promise.all(pending);
+  if(seq!==bibSearchCounter)return;
+  for(const r of extra){if(!r)continue;if(r.kind==='books'&&r.v.length){books=r.v;broadened=true}if(r.kind==='papers'&&r.v.length){papers=r.v;broadened=true}}
+ }
+ bibCurrentResults=[...books,...papers];
+ bibRenderResults(books,'bibBooks');bibRenderResults(papers,'bibPapers');
+ const warnings=[];
+ if(booksResult.status==='rejected'&&books.length===0)warnings.push('本の検索サービスに接続できませんでした');
+ if(papersResult.status==='rejected'&&papers.length===0)warnings.push('論文の検索サービスに接続できませんでした');
+ $('bibSearchStatus').textContent=`本 ${books.length}件・論文 ${papers.length}件の候補を取得しました。`+(broadened?' 検索結果が少なかったため、一部は先頭のキーワードでも探しています。':'')+(warnings.length?' '+warnings.join('。')+'。':'')+' 候補は関連度の保証ではありません。';
+ $('bibSearchButton').disabled=false;$('bibSearchButton').textContent='本・論文を検索する';
+}
+$('bibSearchForm').addEventListener('submit',bibSearch);
+$('bibLoadProfile').addEventListener('click',()=>{
+ const value=bibSafeText(studentProfile.topic||'',120);
+ if(!value){$('bibSearchStatus').textContent='受験マイページに研究テーマが未登録です。検索語を入力するか、進路分野を選んでください。';return}
+ $('bibTopic').value=value;
+ $('bibSearchStatus').textContent='受験マイページのテーマを入力しました。必要に応じて検索語を短く編集し、検索ボタンを押してください。';
+});
+$('page-bibliography').addEventListener('click',async e=>{
+ const btn=e.target.closest('button');if(!btn)return;
+ const saveId=btn.getAttribute('data-bib-save');
+ const removeId=btn.getAttribute('data-bib-remove');
+ const copyId=btn.getAttribute('data-bib-copy');
+ const noteId=btn.getAttribute('data-bib-note-save');
+ const transferId=btn.getAttribute('data-bib-to-draft');
+ if(transferId){const v=bibliographyShelf.find(x=>x.id===transferId);if(!v)return;showPage('documents');const note=['【参考文献のメモ（原典の確認・引用表記が必要）】',v.title,v.author,v.url,v.note||''].filter(Boolean).join('\n');$('docText').value=[$('docText').value,note].filter(Boolean).join('\n\n').slice(0,12000);persistDocumentDraft();$('docCount').textContent=Array.from($('docText').value).length+'文字';return;}
+ if(noteId){const v=bibliographyShelf.find(x=>x.id===noteId);if(v){const input=[...document.querySelectorAll('[data-bib-note]')].find(x=>x.dataset.bibNote===noteId);v.note=(input?.value||'').slice(0,800);persistDemo();$('bibSearchStatus').textContent='参考文献ノートをこの端末に保存しました。';}return;}
+ if(saveId){
+  const record=bibCurrentResults.find(v=>v.id===saveId);
+  if(!record||bibliographyShelf.some(v=>v.id===saveId))return;
+  bibliographyShelf.unshift({...record});bibliographyShelf=bibliographyShelf.slice(0,100);
+  persistDemo();renderBibShelf();bibRenderResults(bibCurrentResults.filter(v=>v.type==='book'),'bibBooks');bibRenderResults(bibCurrentResults.filter(v=>v.type==='paper'),'bibPapers');
+ }
+ if(removeId){bibliographyShelf=bibliographyShelf.filter(v=>v.id!==removeId);persistDemo();renderBibShelf();bibRenderResults(bibCurrentResults.filter(v=>v.type==='book'),'bibBooks');bibRenderResults(bibCurrentResults.filter(v=>v.type==='paper'),'bibPapers')}
+ if(copyId){
+  const v=[...bibCurrentResults,...bibliographyShelf].find(v=>v.id===copyId);
+  if(!v)return;
+  const txt=`${v.author||'著者不明'}（${v.year||'年不明'}）『${v.title}』${v.venue?' '+v.venue:''}。${v.url}`;
+  if(navigator.clipboard?.writeText){try{await navigator.clipboard.writeText(txt);$('bibSearchStatus').textContent='書誌情報をコピーしました。';return}catch(e){}}
+  if(typeof copyText==='function')copyText(txt,'書誌情報をコピーしました。');
+ }
+});
+
+
+// Ver.6.2: 情報を再入力せず連動する、架空データ専用の試作処理。
+function safeLink(url){return /^https:\/\/[^\s<>"']+$/i.test(String(url||''));}
+function localDay(date){if(!date||!/^\d{4}-\d{2}-\d{2}$/.test(date))return null;const d=new Date(date+'T00:00:00');return Number.isNaN(d.getTime())?null:d;}
+function daysAway(date){const d=localDay(date);if(!d)return null;const now=new Date();now.setHours(0,0,0,0);return Math.round((d-now)/86400000);}
+function taskPriority(){
+ const items=[];
+ for(const a of applicationPlans){
+   const days=daysAway(a.due);if(days===null)continue;
+   if(a.stage!=='ready' && days<=14)items.push({label:`${a.uni}：出願締切`,detail:days<0?`${-days}日前に経過（要確認）`:days===0?'本日（本人入力）':`あと${days}日（本人入力）`,days,section:'applications'});
+   const missing=docEntries(a).filter(d=>!d.done).length;
+   if(missing)items.push({label:`${a.uni}：必要書類 ${missing}件が未完了`,detail:'必要書類チェックリストを確認',days:days??99,section:'applications'});
+ }
+ for(const t of todoItems.filter(t=>!t.done).slice(0,6))items.push({label:t.text,detail:'受験マイページの未完了タスク',days:20,section:'profile'});
+ const pending=requests.filter(r=>r.status==='pending'||r.status==='scheduling');
+ if(pending.length)items.push({label:`先生への申し込み ${pending.length}件を確認`,detail:'面接の予定・返信を確認',days:6,section:'requests'});
+ return items.sort((a,b)=>a.days-b.days).slice(0,6);
+}
+function renderToday(){
+ const el=$('linkedToday');if(!el)return;
+ const items=taskPriority();
+ el.innerHTML=items.length?items.map(x=>`<div class="linked-item"><strong>${htmlEscape(x.label)}</strong><small>${htmlEscape(x.detail)}</small><button class="button ghost" data-open-linked="${x.section}" type="button" style="margin-top:8px">確認する</button></div>`).join(''):
+ '<div class="linked-item">今日の優先項目はありません。まず受験マイページや出願予定を登録してみてください。</div>';
+ el.querySelectorAll('[data-open-linked]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.openLinked)));
+}
+function docEntries(a){
+ if(!Array.isArray(a.checklist))a.checklist=[];
+ const names=String(a.doc||'').split(/[、,，・\/／\n]+/).map(x=>x.trim()).filter(Boolean).slice(0,20);
+ return names.map(name=>({name,done:!!a.checklist.find(x=>x.name===name&&x.done)}));
+}
+function renderDocChecklists(){
+ for(const a of applicationPlans){
+   const wrap=[...document.querySelectorAll('[data-checklist-holder]')].find(x=>x.dataset.checklistHolder===a.id);if(!wrap)continue;
+   const items=docEntries(a);
+   wrap.innerHTML=items.map((d,i)=>`<label class="checkline"><input type="checkbox" data-check-doc="${a.id}" data-doc-index="${i}" ${d.done?'checked':''}>${htmlEscape(d.name)}</label>`).join('')+`<p class="linked-mini">${items.filter(x=>x.done).length}/${items.length}件完了。出願準備完了とは自動判定しません。</p>`;
+ }
+ document.querySelectorAll('[data-check-doc]').forEach(input=>input.addEventListener('change',()=>{
+  const a=applicationPlans.find(x=>x.id===input.dataset.checkDoc);if(!a)return;
+  const entries=docEntries(a),name=entries[Number(input.dataset.docIndex)]?.name;if(!name)return;
+  a.checklist=entries.map(x=>({name:x.name,done:x.name===name?input.checked:x.done}));
+  persistDemo();renderApplications();renderDocChecklists();
+ }));
+}
+function attachApplicationLinks(){
+ document.querySelectorAll('[data-source-save]').forEach(btn=>btn.addEventListener('click',()=>{
+  const a=applicationPlans.find(x=>x.id===btn.dataset.sourceSave);if(!a)return;
+  const input=[...document.querySelectorAll('[data-source-input]')].find(x=>x.dataset.sourceInput===a.id);
+  const value=(input?.value||'').trim();if(value&&!safeLink(value)){alert('https://から始まるURLを入力してください。');return;}
+  if(a.sourceUrl!==value)a.sourceCheckedAt='';a.sourceUrl=value;persistDemo();renderApplications();renderDocChecklists();
+ }));
+ document.querySelectorAll('[data-source-confirm]').forEach(btn=>btn.addEventListener('click',()=>{
+  const a=applicationPlans.find(x=>x.id===btn.dataset.sourceConfirm);if(!a)return;
+  if(!safeLink(a.sourceUrl)){alert('先に出典URLを保存してください。');return;}
+  if(!confirm('大学の公式ページを自分で開いて、募集要項の年度と内容を確認しましたか？\nこれは本人の確認記録であり、アプリが内容を検証するものではありません。'))return;
+  a.sourceCheckedAt=new Date().toLocaleDateString('ja-JP');persistDemo();renderApplications();renderDocChecklists();
+ }));
+ // 既存の登録画面の再描画に合わせ、各大学のチェックリストを再設定します。
+ renderDocChecklists();
+}
+function renderComparison(){
+ const wrap=$('uniComparison');if(!wrap)return;
+ wrap.innerHTML=applicationPlans.length?applicationPlans.slice(0,20).map(a=>`<div class="card"><h3 style="margin:0 0 10px">${htmlEscape(a.uni)}</h3><div class="linked-mini">${htmlEscape(a.method)}　／　締切：${htmlEscape(a.due)}（仮）</div><div class="divider"></div><p><strong>学び・授業</strong></p><p class="linked-mini">${htmlEscape(a.program||'未入力')}</p><p><strong>学費メモ</strong></p><p class="linked-mini">${htmlEscape(a.fees||'未確認')}</p><p><strong>書類</strong></p><p class="linked-mini">${docEntries(a).filter(x=>x.done).length}/${docEntries(a).length} 件完了</p><p>${a.sourceCheckedAt?'<span class="linked-good">本人確認日：'+htmlEscape(a.sourceCheckedAt)+'</span>':'<span class="linked-warning">公式情報未確認</span>'}</p><div class="toolbar">${a.sourceUrl&&safeLink(a.sourceUrl)?`<a class="button secondary" href="${htmlEscape(a.sourceUrl)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">出典を開く ↗</a>`:''}<button class="button ghost" data-compare-research="${a.id}" type="button">この大学を調べる</button></div></div>`).join(''):'<div class="card">比較する大学はまだありません。出願スケジュールに大学を登録してください。</div>';
+ wrap.querySelectorAll('[data-compare-research]').forEach(b=>b.addEventListener('click',()=>{
+   const a=applicationPlans.find(x=>x.id===b.dataset.compareResearch);if(!a)return;
+   $('university').value=a.uni;$('researchTopic').value=studentProfile.topic||'';showPage('research');
+ }));
+}
+$('journalForm').addEventListener('submit',e=>{
+ e.preventDefault();if(sessionAccount?.role!=='student')return;
+ activityJournal.unshift({id:newId(),title:safeVal('journalTitle'),day:safeVal('journalDate'),role:safeVal('journalRole'),learn:safeVal('journalLearn'),topic:studentProfile.topic||'',at:stampNow()});
+ activityJournal=activityJournal.slice(0,80);persistDemo();$('journalForm').reset();renderJournal();
+});
+function renderJournal(){
+ $('journalCount').textContent=activityJournal.length+'件';
+ $('journalList').innerHTML=activityJournal.length?activityJournal.map(x=>`<div class="compact-card"><div class="row wrapsmall"><strong>${htmlEscape(x.title)}</strong><span class="pill">${htmlEscape(x.day||x.at)}</span></div><p class="linked-mini">研究テーマ：${htmlEscape(x.topic||'未設定')}</p><p><b>役割・工夫：</b>${htmlEscape(x.role||'未入力')}</p><p><b>結果・学び：</b>${htmlEscape(x.learn||'未入力')}</p><div class="toolbar"><button type="button" class="button secondary" data-journal-use="${x.id}">面接練習に活用</button><button type="button" class="button ghost" data-journal-draft="${x.id}">書類の下書きにメモを転記</button><button type="button" class="button ghost" data-journal-delete="${x.id}">削除</button></div></div>`).join(''):'<div class="empty">活動の記録はまだありません。</div>';
+ $('journalList').querySelectorAll('[data-journal-use]').forEach(b=>b.addEventListener('click',()=>{
+  const x=activityJournal.find(x=>x.id===b.dataset.journalUse);if(!x)return;
+  $('intTheme').value=x.topic||studentProfile.topic||'';
+  $('intWhy').value=[x.title,x.role,x.learn].filter(Boolean).join('／').slice(0,500);showPage('interview');
+ }));
+ $('journalList').querySelectorAll('[data-journal-draft]').forEach(b=>b.addEventListener('click',()=>{const x=activityJournal.find(x=>x.id===b.dataset.journalDraft);if(!x)return;showPage('documents');const insert=['【活動記録のメモ（文章化・事実確認が必要）】',x.title,x.role,x.learn].filter(Boolean).join('\n');$('docText').value=[$('docText').value,insert].filter(Boolean).join('\n\n').slice(0,12000);persistDocumentDraft();$('docCount').textContent=Array.from($('docText').value).length+'文字';}));
+ $('journalList').querySelectorAll('[data-journal-delete]').forEach(b=>b.addEventListener('click',()=>{activityJournal=activityJournal.filter(x=>x.id!==b.dataset.journalDelete);persistDemo();renderJournal()}));
+}
+function renderReflections(){
+ document.querySelectorAll('[data-request-reflection]').forEach(box=>{
+  const id=box.dataset.requestReflection, r=requests.find(x=>x.id===id);if(!r)return;
+  const note=reflections[id]||{};
+  box.innerHTML=`<div class="linked-form"><strong>面接・相談の振り返りメモ</strong><p class="linked-mini">予約と連動する個人用デモメモです。先生に送信されません。</p><label class="field">聞かれた質問・指摘<textarea data-reflection-question="${id}" maxlength="600" class="linked-note">${htmlEscape(note.question||'')}</textarea></label><label class="field">次回改善すること<textarea data-reflection-next="${id}" maxlength="600" class="linked-note">${htmlEscape(note.next||'')}</textarea></label><button type="button" class="button secondary" data-reflection-save="${id}">振り返りを保存</button></div>`;
+ });
+ document.querySelectorAll('[data-reflection-save]').forEach(btn=>btn.addEventListener('click',()=>{
+  const id=btn.dataset.reflectionSave;
+  const q=[...document.querySelectorAll('[data-reflection-question]')].find(x=>x.dataset.reflectionQuestion===id);
+  const n=[...document.querySelectorAll('[data-reflection-next]')].find(x=>x.dataset.reflectionNext===id);
+  reflections[id]={question:(q?.value||'').slice(0,600),next:(n?.value||'').slice(0,600),updated:stampNow()};persistDemo();btn.textContent='保存しました';
+ }));
+}
+function draftKey(){return ($('draftApplication').value||'general')+'::'+($('docType').value||'志望理由書');}
+function updateDraftApplicationOptions(){
+ const sel=$('draftApplication'),before=sel.value||'general';
+ sel.innerHTML='<option value="general">共通の下書き</option>'+applicationPlans.map(a=>`<option value="${htmlEscape(a.id)}">${htmlEscape(a.uni)}</option>`).join('');
+ sel.value=applicationPlans.some(a=>a.id===before)?before:'general';
+ restoreDocumentDraft();
+}
+function restoreDocumentDraft(){
+ if(!$('draftApplication'))return;
+ const current=documentDrafts[draftKey()]||{};
+ $('docText').value=current.text||'';
+ $('docAim').value=current.aim||'';
+ $('charLimit').value=current.limit||'';
+ $('docCount').textContent=Array.from($('docText').value).length+'文字';
+ $('draftSaveStatus').textContent=current.savedAt?`保存済み下書きを復元しました（${current.savedAt}）`:'入力するとこの端末へ自動保存します。個人情報は入力しないでください。';
+}
+function persistDocumentDraft(){
+ if(sessionAccount?.role!=='student')return;
+ const text=$('docText').value.slice(0,12000);
+ documentDrafts[draftKey()]={text,aim:$('docAim').value.slice(0,200),limit:$('charLimit').value,savedAt:stampNow()};
+ persistDemo();$('draftSaveStatus').textContent='この端末に自動保存しました（'+stampNow()+'）';
+}
+$('docText').addEventListener('input',persistDocumentDraft);
+$('docAim').addEventListener('input',persistDocumentDraft);
+$('charLimit').addEventListener('input',persistDocumentDraft);
+$('docType').addEventListener('change',restoreDocumentDraft);
+$('draftApplication').addEventListener('change',restoreDocumentDraft);
+function syncTopicDefaults(){
+ const topic=studentProfile.topic||'',uni=studentProfile.university||'';
+ for(const [id,current] of [['bibTopic',''],['topic','演劇を活用したコミュニケーション教育'],['recTheme','演劇を活用したコミュニケーション教育'],['intTheme','演劇を活用したコミュニケーション教育'],['researchTopic',''],['activityTopic','コミュニケーション教育']]){
+  const el=$(id);if(el&&topic && (!el.value.trim()||el.value===current))el.value=topic;
+ }
+ if(uni&&!$('university').value)$('university').value=uni;
+}
+// タブを分けた操作デモでは、同じオリジンであれば storage イベントを用いて再読込する。
+// 編集途中の文章を上書きしないため、自動反映は申し込み・先生側画面のみに限定。
+window.addEventListener('storage',e=>{
+ if(e.key!==DEMO_KEY||!e.newValue)return;
+ try{
+  const data=JSON.parse(e.newValue);
+  if(Array.isArray(data.requests)){requests=data.requests;if(sessionAccount?.role==='teacher')renderTeacherPortal();if(sessionAccount?.role==='student'&&document.querySelector('#page-requests:not(.hidden)'))renderRequests();}
+ }catch(err){}
+});
+
 persistDemo();
 
-updateSchool();renderMatch();renderRequests();
+updateSchool();syncTopicDefaults();renderMatch();renderRequests();
 let priorId=null;try{priorId=sessionStorage.getItem(SESSION_KEY)}catch(e){}
 if(priorId&&DEMO_USERS[priorId]){
  const info=DEMO_USERS[priorId];sessionAccount={id:priorId,role:info.role,name:info.name,teacherId:info.teacherId||null};
